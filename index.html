@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>がらくたツールボックス</title>
+
+    <link rel="shortcut icon" href="" />
+
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="がらくたツールボックスは、いろいろなものを作っているおひとりさまサークルです。">
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="がらくたツールボックス" />
+    <meta name="twitter:description" content="がらくたツールボックスは、いろいろなものを作っているおひとりさまサークルです。" />
+    <meta name="twitter:image" content="" />
+
+    <meta property="og:locale" content="ja_JP" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="がらくたツールボックス" />
+    <meta property="og:description" content="がらくたツールボックスは、いろいろなものを作っているおひとりさまサークルです。" />
+    <meta property="og:url" content="https://garakuta-toolbox.com" />
+    <meta property="og:site_name" content="がらくたツールボックス" />
+    <meta property="og:image" content="" />
+
+    <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c" rel="stylesheet">
+
+    <script src="http://localhost:3000/player.bundle.js" async defer></script>
+  </head>
+
+  <body>
+    <article class="article-screen article-screen-top">
+      <h1 class="article-screen-top__title wf-roundedmplus1c">がらくたツールボックス</h1>
+
+      <div class="melody">♪</div>
+      <div class="melody melody--blue">♪</div>
+      <div class="melody melody--red">♪</div>
+      <div class="melody melody--green">♪</div>
+      <img class="working" src="/assets/image/working.png" alt="">
+      <img class="light" src="/assets/image/light.png" alt="">
+      <img class="downlight" src="/assets/image/downlight.png" alt="">
+      <img class="hiyoko" src="/assets/image/hiyoko.png" alt="">
+      <img class="smoke" src="/assets/image/smoke.png" alt="">
+      <img class="smoke2" src="/assets/image/smoke2.png" alt="">
+
+      <div class="next">
+        <img src="/assets/image/yazirushi.png" alt="下へ">
+      </div>
+    </article>
+    <div class="wave"></div>
+    <article class="article-screen article-screen-author">
+      <h2>著者近影など</h2>
+      <div class="author">
+        <div class="author__image">
+          <img src="/assets/image/author.png" alt="著者近影">
+        </div>
+        <div class="author__name">ぴよっぴ</div>
+        <p>いろいろつくったりすることがすきなひとです</p>
+        <ul class="author__accounts">
+          <li><a href="https://twitter.com/piyorinpa" target="_blank">Twitter</a></li>
+          <li><a href="https://github.com/piyoppi" target="_blank">Github</a></li>
+          <li><a href="https://garakuta-toolbox.hatenablog.com" target="_blank">Blog</a></li>
+        </div>
+      </div>
+    </article>
+    <div class="wave wave-bg-white"></div>
+    <article class="article-screen article-screen-working">
+      <h2>つくっているものたち</h2>
+      <section class="working-section working-section--dungeon">
+        <h3 class="working-section__caption">みんなでつくるダンジョン</h3>
+        <div class="working-section__service-logo">
+          <a href="https://dungeon.garakuta-toolbox.com" target="_blank">
+            <img src="/assets/image/mindan_logo.png" alt="minnade-dungeon">
+          </a>
+          <p><a href="https://dungeon.garakuta-toolbox.com" target="_blank">https://dungeon.garakuta-toolbox.com</a></p>
+        </div>
+        <map-player class="player" mapid="1"></map-player>
+        <div class="controller-howto-pc">
+          <div class="controller-howto__key">
+            <img src="/assets/image/crosskey.png" class="controller-crosskey" alt="十字キー"> 移動
+          </div>
+          <div class="controller-howto__key">
+            <img src="/assets/image/zkey.png" class="controller-key" alt="Zキー"> ジャンプ
+          </div>
+          <div class="controller-howto__key">
+            <img src="/assets/image/xkey.png" class="controller-key" alt="Xキー"> 調べる
+          </div>
+        </div>
+        <div class="working-section__details">
+          <p>マップをつくって・つなげて・たんけんできるウェブサービスです</p>
+          <ul>
+            <li>上記のようなマップをかんたんにブラウザでつくれます</li>
+            <li>つくったマップは公開して他の人に遊んでもらうことができます</li>
+            <li>じぶんや他の人のマップとつなげることができます</li>
+            <li>マップをたんけんして遊ぶことができます</li>
+          </ul>
+        </div>
+        <div class="working-section__technical-summary">
+          <h4>つかったものたち</h4>
+          <ul>
+            <li>Vue.js</li>
+            <li>Pixi.js</li>
+            <li>Ruby on Rails</li>
+          </ul>
+        </div>
+      </section>
+      <section class="working-section">
+        <h3 class="working-section__caption">ぴこぴよ</h3>
+        <div class="working-section__service-logo">
+          <a href="https://picopiyo.iconclub.jp" target="_blank">
+            <img src="/assets/image/picopiyo_logo.png" alt="picopiyo">
+          </a>
+          <p><a href="https://picopiyo.iconclub.jp" target="_blank">https://picopiyo.iconclub.jp</a></p>
+        </div>
+        <div class="working-section__details">
+          <p>ドット絵を拡大してツイッターやマストドンに投稿できるサービスです</p>
+
+          <ul>
+            <li>原寸大のドット絵を用意することで、ドット絵を拡大して投稿できます</li>
+            <li>原寸大のドット絵と拡大したドット絵を並べて投稿できます</li>
+          </ul>
+        </div>
+        <div class="working-section__technical-summary">
+          <h4>つかったものたち</h4>
+          <ul>
+            <li>PHP</li>
+            <li>JavaScript</li>
+          </ul>
+        </div>
+      </section>
+      <section class="working-section">
+        <h3 class="working-section__caption">あいこんくらぶ</h3>
+        <div class="working-section__service-logo">
+          <a href="https://iconclub.jp" target="_blank">
+            <img src="/assets/image/iconclub_logo.png" alt="iconclub">
+          </a>
+          <p><a href="https://iconclub.jp" target="_blank">https://iconclub.jp</a></p>
+        </div>
+        <div class="working-section__details">
+          <p>ブラウザでドット絵を描いて公開できるサービスです</p>
+          <ul>
+            <li>お手持ちのドット絵をアップロードして公開できます（おおきさ256px四方まで）</li>
+            <li>ドット絵エディタ（PC/スマートフォン対応）で絵が描けます</li>
+            <li>ライセンス付きドット絵や、利用規約付きドット絵を配布することができます</li>
+          </ul>
+        </div>
+        <div class="working-section__technical-summary">
+          <h4>つかったものたち</h4>
+          <ul>
+            <li>PHP</li>
+            <li>JavaScript</li>
+          </ul>
+        </div>
+      </section>
+    </article>
+    <div class="wave wave-dotted"></div>
+    <article class="article-screen article-screen-pastwork">
+      <h2>過去の作品たち</h2>
+      <section class="working-section">
+        <h3 class="working-section__caption">以前のがらくたツールボックスのサイト</h3>
+        <div class="working-section__service-logo">
+          <a href="https://v0.garakuta-toolbox.com" target="_blank">
+            <img src="/assets/image/garakutatool_old_logo.png" alt="garakutatoolbox">
+          </a>
+          <p><a href="https://v0.garakuta-toolbox.com" target="_blank">https://v0.garakuta-toolbox.com</a></p>
+        </div>
+        <div class="working-section__details">
+          <p>以前のがらくたツールボックスのウェブサイトです。凝った作りになっていますが、なんとスマートフォン非対応ということで、いまご覧になっているウェブサイトをあらたにこさえました。</p>
+        </div>
+        <div class="working-section__technical-summary">
+          <h4>つかったものたち</h4>
+          <ul>
+            <li>Vue.js</li>
+          </ul>
+        </div>
+      </section>
+      <section class="working-section">
+        <h3 class="working-section__caption">めもりあん</h3>
+        <div class="working-section__service-logo">
+          <a href="http://garakuta-toolbox.moo.jp/memorian" target="_blank">
+            <img src="/assets/image/memorian_logo.png" alt="iconclub">
+          </a>
+          <p><a href="http://garakuta-toolbox.moo.jp/memorian" target="_blank">http://garakuta-toolbox.moo.jp/memorian</a></p>
+        </div>
+        <div class="working-section__details">
+          <p>コードの断片をかんたんにメモすることができるChrome拡張機能です。 メモした情報はタグ付けしたり、あとから検索することができます。</p>
+        </div>
+        <div class="working-section__technical-summary">
+          <h4>つかったものたち</h4>
+          <ul>
+            <li>Chrome Extensions</li>
+            <li>Vue.js</li>
+            <li>IndexedDB</li>
+          </ul>
+        </div>
+      </section>
+      <section class="working-section">
+        <h3 class="working-section__caption">ステージデザイナー</h3>
+        <div class="working-section__service-logo">
+          <img src="/assets/image/stage-designer.png" alt="stage-designer">
+          <p><a href="http://garakuta-toolbox.moo.jp" target="_blank">http://garakuta-toolbox.moo.jp</a></p>
+        </div>
+        <div class="working-section__details">
+          <p>アクションゲームを簡単に作れるツールを目指していましたが、開発中止を決定しました。</p>
+          <p>がらくたツールボックスとしてのさいしょのプロジェクトです。</p>
+        </div>
+        <div class="working-section__technical-summary">
+          <h4>つかったものたち</h4>
+          <ul>
+            <li>Visual Basic</li>
+            <li>C++</li>
+            <li>DirectX</li>
+          </ul>
+        </div>
+      </section>
+    </article>
+    <div class="footer-topside">
+      <img src="/assets/image/hiyoko-normal.png" alt="" class="footer-topside__hiyoko">
+    </div>
+    <footer>
+      がらくたツールボックス
+    </footer>
+  </body>
+</html>
