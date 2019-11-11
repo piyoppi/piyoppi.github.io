@@ -278,6 +278,69 @@ body {
   }
 }
 
+.window {
+  position: absolute;
+  top: 50px;
+  right: 70px;
+  width: 150px;
+}
+
+.window-outside {
+  position: absolute;
+  top: 50px;
+  right: 72px;
+  width: 146px;
+  height: 146px;
+  border-radius: 75px;
+  background-color: #0e1c36;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 600px) {
+  .window-outside, .window {
+    display: none;
+  }
+}
+
+.moon {
+  position: absolute;
+  top: 40px;
+  right: 30px;
+  width: 50px;
+}
+
+.cloud {
+  position: absolute;
+  width: 60px;
+  height: 30px;
+  border-radius: 15px;
+  background-color: gainsboro;
+  top: 80px;
+  left: -60px;
+  animation-duration: 50s;
+  animation-name: cloud;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.cloud-two {
+  left: -150px;
+  top: 100px;
+  width: 40px;
+  height: 20px;
+  border-radius: 10px;
+}
+
+@keyframes cloud {
+  from {
+    transform: translateX(0px);
+  }
+
+  to {
+    transform: translateX(300px);
+  }
+}
+
 .melody {
   position: absolute;
   left: 370px;
