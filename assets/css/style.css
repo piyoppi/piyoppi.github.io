@@ -29,6 +29,12 @@ body {
   color: whitesmoke;
 }
 
+@media screen and (max-width: 600px) {
+  .article-screen-top {
+    height: 85vh;
+  }
+}
+
 .article-screen-top__title {
   margin: 0;
   padding: 10px;
