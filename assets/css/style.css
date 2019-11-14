@@ -501,18 +501,6 @@ body {
   margin: 10px 20px;
 }
 
-.player {
-  width: 100%;
-  max-width: 640px;
-  height: 480px;
-  display: block;
-  background-color: black;
-  margin: 0 auto;
-  border-radius: 5px;
-  box-shadow: 3px 3px 0px 0px rgba(0,0,0,0.4);
-  overflow: hidden;
-}
-
 @media screen and (max-width: 600px) {
   .working-section--dungeon {
     padding-left: 0;
@@ -525,11 +513,6 @@ body {
 
   .working-section__details ul {
      padding: 10px;
-  }
-
-  .player {
-    border-radius: 0;
-    box-shadow: none;
   }
 }
 
@@ -577,11 +560,33 @@ body {
   margin: 2px 1px;
 }
 
+.player {
+  width: 100%;
+  max-width: 640px;
+  height: 480px;
+  display: block;
+  background-color: black;
+  margin: 0 auto;
+  border-radius: 5px;
+  box-shadow: 3px 3px 0px 0px rgba(0,0,0,0.4);
+  overflow: hidden;
+}
+
 .controller-howto-pc {
   display: flex;
   justify-content: center;
   align-items: flex-end;
   font-size: 10pt;
+}
+
+@media screen and (max-width: 750px) {
+  .player {
+    display: none;
+  }
+
+  .controller-howto-pc {
+    display: none;
+  }
 }
 
 .controller-howto__key {
@@ -596,12 +601,6 @@ body {
 .controller-key {
   height: 30px;
   vertical-align: bottom;
-}
-
-@media screen and (max-width: 600px) {
-  .controller-howto-pc {
-    display: none;
-  }
 }
 
 footer {
