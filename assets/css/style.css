@@ -573,9 +573,7 @@ body {
 }
 
 .controller-howto-pc {
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
+  text-align: center;
   font-size: 10pt;
 }
 
@@ -591,6 +589,7 @@ body {
 
 .controller-howto__key {
   margin: 10px;
+  display: inline-block;
 }
 
 .controller-crosskey {
