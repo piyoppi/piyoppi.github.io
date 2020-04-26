@@ -560,6 +560,41 @@ body {
   margin: 2px 1px;
 }
 
+.working-section__links {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.working-section__links li {
+  display: inline-block;
+}
+
+.link {
+  text-decoration: none;
+  color: gray;
+}
+
+.link:hover {
+  color: black;
+}
+
+.link:visited {
+  color: gray;
+}
+
+.package-link:before {
+  content: '\01F4E6  ';
+}
+
+.source-code-link:before {
+  content: '\01F4C3  ';
+}
+
+.sample-link:before {
+  content: '\01F3AE  ';
+}
+
 .player {
   width: 100%;
   max-width: 640px;
