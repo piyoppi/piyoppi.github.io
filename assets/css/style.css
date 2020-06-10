@@ -535,6 +535,8 @@ body {
 
 .working-section__technical-summary {
   padding: 15px;
+  font-size: 10pt;
+  color: gray;
 }
 
 .working-section__technical-summary > h4 {
@@ -546,13 +548,12 @@ body {
 
 .working-section__technical-summary ul {
   list-style-type: none;
-  margin: 0;
+  margin: 10px 0;
   padding: 0;
 }
 
 .working-section__technical-summary li {
   display: inline-block;
-  font-size: 10pt;
   background-color: whitesmoke;
   color: gray;
   border-radius: 13px;
@@ -661,4 +662,9 @@ footer {
   width: 70px;
   right: 20px;
   bottom: 0;
+}
+
+.note {
+  font-size: 10pt;
+  color: gray;
 }

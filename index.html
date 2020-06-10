@@ -72,9 +72,9 @@
         <div class="author__name">ぴよっぴ</div>
         <p>いろいろつくったりします。最近はウェブサービスをつくったりしています。</p>
         <ul class="author__accounts">
-          <li><a href="https://twitter.com/piyorinpa" target="_blank">Twitter</a></li>
-          <li><a href="https://github.com/piyoppi" target="_blank">Github</a></li>
-          <li><a href="https://garakuta-toolbox.hatenablog.com" target="_blank">Blog</a></li>
+          <li><a href="https://twitter.com/piyorinpa" target="_blank" rel="noreferrer noopener">Twitter</a></li>
+          <li><a href="https://github.com/piyoppi" target="_blank" rel="noreferrer noopener">Github</a></li>
+          <li><a href="https://garakuta-toolbox.hatenablog.com" target="_blank" rel="noreferrer noopener">Blog</a></li>
         </div>
       </div>
     </article>
@@ -126,10 +126,14 @@
           <a href="https://picopiyo.iconclub.jp" target="_blank">
             <img src="/assets/image/picopiyo_logo.png" alt="picopiyo">
           </a>
-          <p><a href="https://picopiyo.iconclub.jp" target="_blank">https://picopiyo.iconclub.jp</a></p>
+          <p>Ver. 1  <a href="https://picopiyo.iconclub.jp" target="_blank">https://picopiyo.iconclub.jp</a></p>
+          <p>Ver. 2（試験公開中）  <a href="https://picopiyo.garakuta-toolbox.com" target="_blank">https://picopiyo.garakuta-toolbox.com</a></p>
+          <div class="note">
+            ※ ver.2 は試験公開中ですが、近い将来にVer.1を廃止し、Ver.2に置き換えられる予定です。
+          </div>
         </div>
         <div class="working-section__details">
-          <p>ドット絵を拡大してツイッターやマストドンに投稿できるサービスです</p>
+          <p>ドット絵を拡大してツイッターに投稿できるサービスです</p>
 
           <ul>
             <li>原寸大のドット絵を用意することで、ドット絵を拡大して投稿できます</li>
@@ -138,6 +142,14 @@
         </div>
         <div class="working-section__technical-summary">
           <h4>つかったものたち</h4>
+          (ver.2)
+          <ul>
+            <li>AWS Lambda + API Gateway</li>
+            <li>AWS S3 + CloudFront</li>
+            <li>React</li>
+          </ul>
+
+          (ver.1)
           <ul>
             <li>PHP</li>
             <li>JavaScript</li>
@@ -169,7 +181,8 @@
       <section class="working-section">
         <h3 class="working-section__caption">pixelart-element</h3>
         <div class="working-section__details">
-          ドット絵を拡大してもきれいに表示されるカスタム要素
+          <p>ドット絵を拡大してもきれいに表示されるカスタム要素</p>
+          <p><a href="https://picopiyo.garakuta-toolbox.com" target="_blank" rel="noreferrer noopener">ぴこぴよv2</a> でも使われています</p>
           <ul class="working-section__links">
             <li><a class="link package-link" href="https://www.npmjs.com/package/@piyoppi/pixelart-element">npm</a></li>
             <li><a class="link source-code-link" href="https://github.com/piyoppi/pixelart-element">GitHub</a></li>
