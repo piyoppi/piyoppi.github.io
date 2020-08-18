@@ -1,0 +1,13 @@
+.articleScreen {
+  width: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.articleScreen h2, h3 {
+  font-family: "M PLUS Rounded 1c";
+}
+
+.fullScreen {
+  height: 100vh;
+}
