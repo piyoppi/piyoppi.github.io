@@ -1,0 +1,11 @@
+.next {
+  position: absolute;
+  left: calc( 50% - 15px );
+  bottom: 5px;
+  width: 30px; 
+}
+
+.next img {
+  width: 100%;
+  opacity: 0.6
+}

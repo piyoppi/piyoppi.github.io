@@ -1,5 +1,6 @@
 import React from "react"
 import ArticleScreen from "./articleScreen"
+import BottomNavigationArrow from "./bottomNavigationArrow"
 import styles from "./toppageFirstScreen.module.css"
 
 import piyoppiImage from "../../assets/images/sitting-piyoppi.png"
@@ -46,9 +47,7 @@ export default function Home() {
           ここは、趣味でつくったいろいろなものをまとめたりするウェブサイトです
         </div>
 
-        <div className={styles.next}>
-          <img src="/assets/image/yazirushi.png" alt="下へ" />
-        </div>
+        <BottomNavigationArrow />
       </div>
     </ArticleScreen>
   )
