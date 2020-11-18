@@ -1,10 +1,14 @@
 import React from "react"
 import ToppageFirstScreen from "./../components/toppageFirstScreen"
 import ArticleScreen from "./../components/articleScreen"
+import SectionBox from "./../components/sectionBox"
+import WorksSection from "./../components/worksSection"
 import "./index.css"
 import styles from './index.module.css'
 
 import AuthorImage from './../../assets/image/author.png'
+import DunogeonLogo from './../../assets/image/mindan_logo.png'
+import PicopiyoLogo from './../../assets/image/picopiyo_logo.png'
 
 export default function Home() {
   return(
@@ -12,6 +16,7 @@ export default function Home() {
       <ToppageFirstScreen />
 
       <div className={styles.wave}></div>
+
       <ArticleScreen gray>
         <div className={styles.author}>
           <h2>著者近影など</h2>
@@ -27,8 +32,35 @@ export default function Home() {
           </ul>
         </div>
       </ArticleScreen>
+
       <ArticleScreen>
         <h2>つくっているものたち</h2>
+
+        <SectionBox>
+          <WorksSection
+            title="みんなでつくるダンジョン"
+            link="https://dungeon.garakuta-toolbox.com"
+            logo={DunogeonLogo}
+            technicalElements={['Vue.js', 'Pixi.js', 'Ruby on Rails']}
+          >
+          </WorksSection>
+        </SectionBox>
+
+        <SectionBox>
+          <WorksSection
+            title="ぴこぴよ"
+            link="https://picopiyo.garakuta-toolbox.com"
+            logo={PicopiyoLogo}
+            technicalElements={['AWS Lambda + API Gateway', 'AWS S3 + CloudFront', 'React']}
+          >
+            <p>ドット絵を拡大してツイッターに投稿できるサービスです</p>
+
+            <ul>
+              <li>原寸大のドット絵を用意することで、ドット絵を拡大して投稿できます</li>
+              <li>原寸大のドット絵と拡大したドット絵を並べて投稿できます</li>
+            </ul>
+          </WorksSection>
+        </SectionBox>
       </ArticleScreen>
     </div>
   )

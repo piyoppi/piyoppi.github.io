@@ -1,0 +1,40 @@
+.caption {
+  text-align: center;
+}
+
+.logoBoundary {
+  text-align: center;
+  margin: 30px auto;
+}
+
+.technicalSummary {
+  padding: 15px;
+  font-size: 10pt;
+  color: gray;
+}
+
+.technicalSummary > h4 {
+  font-size: 10pt;
+  margin: 6px;
+  color: darkgray;
+  font-weight: normal;
+}
+
+.technicalSummary ul {
+  list-style-type: none;
+  margin: 10px 0;
+  padding: 0;
+}
+
+.technicalSummary li {
+  display: inline-block;
+  background-color: whitesmoke;
+  color: gray;
+  border-radius: 13px;
+  padding: 3px 8px;
+  margin: 2px 1px;
+}
+
+.details {
+  margin: 30px;
+}
