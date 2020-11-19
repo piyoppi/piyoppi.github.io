@@ -13,6 +13,10 @@ export default (props) => {
     articleClasses += ` ${ArticleScreenStyles.gray}`
   }
 
+  if( props.content ) {
+    articleClasses += ` ${ArticleScreenStyles.content}`
+  }
+
   return(
     <article className={articleClasses}>
       { props.children }

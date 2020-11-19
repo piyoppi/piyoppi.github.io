@@ -7,6 +7,10 @@
   margin: 30px auto;
 }
 
+.logoBoundary img {
+  max-width: 90%;
+}
+
 .technicalSummary {
   padding: 15px;
   font-size: 10pt;
@@ -37,4 +41,8 @@
 
 .details {
   margin: 30px;
+}
+
+.details ul > li {
+  margin: 10px 20px;
 }
