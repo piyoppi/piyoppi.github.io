@@ -4,6 +4,7 @@ import ArticleScreen from "./../components/articleScreen"
 import SectionBox from "./../components/sectionBox"
 import WorksSection from "./../components/worksSection"
 import WaveHorizon from "./../components/waveHorizon"
+import LibraryLinks from "./../components/libraryLinks"
 import "./index.css"
 import styles from './index.module.css'
 
@@ -97,6 +98,49 @@ export default function Home() {
 
       <ArticleScreen content>
         <h2> 実験的な開発 / ライブラリ</h2>
+        <SectionBox>
+          <WorksSection
+            title="picopico-pad"
+            technicalElements={['JavaScript', 'GamePad API']}
+          >
+            <p>ブラウザでゲームパッドをお手軽に使うためのライブラリ</p>
+            <LibraryLinks
+              packageHref="https://www.npmjs.com/package/@piyoppi/picopico-pad"
+              sourceCodeHref="https://github.com/piyoppi/picopico-pad"
+              sampleHref="https://garakuta-toolbox.com/gamepad_playground"
+            />
+          </WorksSection>
+        </SectionBox>
+
+        <SectionBox>
+          <WorksSection
+            title="pixelart-element"
+            technicalElements={['JavaScript', 'Custom Elements']}
+          >
+            <p>ドット絵を拡大してもきれいに表示されるカスタム要素</p>
+            <p><a href="https://picopiyo.garakuta-toolbox.com" target="_blank" rel="noreferrer noopener">ぴこぴよv2</a> でも使われています</p>
+            <LibraryLinks
+              packageHref="https://www.npmjs.com/package/@piyoppi/pixelart-element"
+              sourceCodeHref="https://github.com/piyoppi/pixelart-element"
+              sampleHref="https://garakuta-toolbox.com/pixelart-element"
+            />
+          </WorksSection>
+        </SectionBox>
+
+        <SectionBox>
+          <WorksSection
+            title="colision-detector"
+            technicalElements={['JavaScript']}
+          >
+            <p>2Dあたり判定ライブラリ</p>
+            <p><a href="https://dungeon.garakuta-toolbox.com">みんなでつくるダンジョン</a>のあたり判定にも使われています</p>
+            <LibraryLinks
+              packageHref="https://www.npmjs.com/package/@piyoppi/colision-detector"
+              sourceCodeHref="https://github.com/piyoppi/colision-detector"
+              sampleHref="https://garakuta-toolbox.com/colision-detector/sample"
+            />
+          </WorksSection>
+        </SectionBox>
       </ArticleScreen>
 
       <WaveHorizon />

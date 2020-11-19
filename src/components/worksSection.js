@@ -6,10 +6,18 @@ export default (props) => {
     <div>
       <h3 className={styles.caption}> { props.title } </h3>
       <div className={styles.logoBoundary}>
-        <a href={props.link} target="_blank">
-          <img src={props.logo} alt="logo" />
-        </a>
-        <p><a href={props.link} target="_blank"> { props.link } </a></p>
+        {
+          props.logo && (
+            <a href={props.link} target="_blank">
+              <img src={props.logo} alt="logo" />
+            </a>
+          )
+        }
+        {
+          props.link && (
+            <p><a href={props.link} target="_blank"> { props.link } </a></p>
+          )
+        }
       </div>
       <div className={styles.details}>
         { props.children }

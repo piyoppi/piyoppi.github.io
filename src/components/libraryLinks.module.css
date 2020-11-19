@@ -1,0 +1,26 @@
+.links {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.links li {
+  display: inline-block;
+}
+
+.link {
+  text-decoration: none;
+  color: gray;
+}
+
+.packageLink:before {
+  content: '\01F4E6  ';
+}
+
+.sourceCodeLink:before {
+  content: '\01F4C3  ';
+}
+
+.sampleLink:before {
+  content: '\01F3AE  ';
+}
