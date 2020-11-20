@@ -5,6 +5,7 @@ import SectionBox from "./../components/sectionBox"
 import WorksSection from "./../components/worksSection"
 import WaveHorizon from "./../components/waveHorizon"
 import LibraryLinks from "./../components/libraryLinks"
+import Footer from "./../components/footer"
 import "./index.css"
 import styles from './index.module.css'
 
@@ -187,6 +188,8 @@ export default function Home() {
           </WorksSection>
         </SectionBox>
       </ArticleScreen>
+
+      <Footer />
     </div>
   )
 }
