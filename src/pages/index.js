@@ -5,6 +5,7 @@ import SectionBox from "./../components/sectionBox"
 import WorksSection from "./../components/worksSection"
 import WaveHorizon from "./../components/waveHorizon"
 import LibraryLinks from "./../components/libraryLinks"
+import SEO from "./../components/seo"
 import Footer from "./../components/footer"
 import "./index.css"
 import styles from './index.module.css'
@@ -23,6 +24,8 @@ import XKeyImage from './../../assets/image/xkey.png'
 export default function Home() {
   return(
     <div>
+      <SEO />
+
       <ToppageFirstScreen />
 
       <div className={styles.wave}></div>
