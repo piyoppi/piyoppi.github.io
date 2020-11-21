@@ -6,6 +6,7 @@ import WorksSection from "./../components/worksSection"
 import WaveHorizon from "./../components/waveHorizon"
 import LibraryLinks from "./../components/libraryLinks"
 import SEO from "./../components/seo"
+import WebFonts from "./../components/webFonts"
 import Footer from "./../components/footer"
 import "./index.css"
 import styles from './index.module.css'
@@ -24,6 +25,7 @@ import XKeyImage from './../../assets/image/xkey.png'
 export default function Home() {
   return(
     <div>
+      <WebFonts />
       <SEO />
 
       <ToppageFirstScreen />
