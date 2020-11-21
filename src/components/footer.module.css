@@ -1,0 +1,29 @@
+footer {
+}
+
+.footerImageBoundary {
+  position: relative;
+  height: 100px;
+}
+
+.footerContent {
+  background-color: #1a3b52;
+  color: whitesmoke;
+  padding: 20px;
+  font-size: 10pt;
+  text-align: center;
+}
+
+.footerToolboxImage {
+  position: absolute;
+  width: 250px;
+  left: 20px;
+  bottom: 0;
+}
+
+.footerHiyokoImage {
+  position: absolute;
+  width: 70px;
+  right: 20px;
+  bottom: 0;
+}

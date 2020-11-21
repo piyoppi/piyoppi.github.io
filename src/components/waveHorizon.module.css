@@ -1,0 +1,7 @@
+.wave {
+  background-image: url("./../../assets/image/wave-dotted.png");
+  background-color: transparent;
+  width: 100%;
+  height: 30px;
+  background-size: contain;
+}
