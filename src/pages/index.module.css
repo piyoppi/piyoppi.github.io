@@ -67,16 +67,6 @@
   background-size: contain;
 }
 
-@media screen and (max-width: 750px) {
-  .dungeonPlayer {
-    display: none;
-  }
-
-  .controllerKeys {
-    display: none;
-  }
-}
-
 .controllerKeys {
   text-align: center;
   font-size: 10pt;
@@ -107,4 +97,14 @@
   border-radius: 5px;
   box-shadow: 3px 3px 0px 0px rgba(0,0,0,0.4);
   overflow: hidden;
+}
+
+@media screen and (max-width: 750px) {
+  .dungeonPlayer {
+    display: none;
+  }
+
+  .controllerKeys {
+    display: none;
+  }
 }

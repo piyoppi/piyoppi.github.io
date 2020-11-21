@@ -7,12 +7,20 @@
   white-space: nowrap;
   position: relative;
   z-index: 2;
+  max-width: 100%;
   font-family: "M PLUS Rounded 1c";
 }
 
+@media screen and (max-width: 500px) {
+  .title {
+    font-size: 20pt;
+  }
+}
+
 .toppageBoundary {
-  width: 100%;
+  width: 100vw;
   height: 100%;
+  position: relative;
   background-color: #1a3b52;
   color: whitesmoke;
   justify-content: center;
@@ -310,7 +318,7 @@
 }
 
 @media screen and (max-width: 600px) {
-  .window-outside, .window {
+  .windowBoundary, .windowImage {
     display: none;
   }
 }
