@@ -42,7 +42,7 @@ export default function Home() {
           <p>いろいろつくったりします。最近はウェブサービスをつくったりしています。</p>
           <ul className={styles.authorAccounts}>
             <li><a href="https://twitter.com/piyorinpa" target="_blank" rel="noreferrer noopener">Twitter</a></li>
-            <li><a href="https://github.com/piyoppi" target="_blank" rel="noreferrer noopener">Github</a></li>
+            <li><a href="https://github.com/piyoppi" target="_blank" rel="noreferrer noopener">GitHub</a></li>
             <li><a href="https://garakuta-toolbox.hatenablog.com" target="_blank" rel="noreferrer noopener">Blog</a></li>
           </ul>
         </div>
