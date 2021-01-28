@@ -147,6 +147,19 @@ export default function Home() {
             />
           </WorksSection>
         </SectionBox>
+
+        <SectionBox>
+          <WorksSection
+            title="map-editor"
+            technicalElements={['TypeScript', 'LitElement']}
+          >
+            <p>ブラウザ上で動く簡易ゲームマップエディタ（開発中）</p>
+            <LibraryLinks
+              sourceCodeHref="https://github.com/piyoppi/map-editor"
+              sampleHref="https://garakuta-toolbox.com/map-editor"
+            />
+          </WorksSection>
+        </SectionBox>
       </ArticleScreen>
 
       <WaveHorizon />
