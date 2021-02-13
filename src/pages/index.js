@@ -156,7 +156,7 @@ export default function Home() {
             <p>ブラウザ上で動く簡易ゲームマップエディタ（開発中）</p>
             <LibraryLinks
               sourceCodeHref="https://github.com/piyoppi/map-editor"
-              sampleHref="https://garakuta-toolbox.com/map-editor"
+              sampleHref="https://garakuta-toolbox.com/pico2map"
             />
           </WorksSection>
         </SectionBox>
