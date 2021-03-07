@@ -5,6 +5,7 @@ import SectionBox from "./../components/sectionBox"
 import WorksSection from "./../components/worksSection"
 import WaveHorizon from "./../components/waveHorizon"
 import LibraryLinks from "./../components/libraryLinks"
+import Anchor from "./../components/anchor"
 import SEO from "./../components/seo"
 import WebFonts from "./../components/webFonts"
 import Footer from "./../components/footer"
@@ -51,7 +52,7 @@ export default function Home() {
       <div className={styles.waveBgWhite}></div>
 
       <ArticleScreen content>
-        <h2>つくっているものたち</h2>
+        <h2 id="works"> <Anchor anchorId="works" /> つくっているものたち</h2>
 
         <SectionBox>
           <WorksSection
@@ -103,7 +104,7 @@ export default function Home() {
       <WaveHorizon />
 
       <ArticleScreen content>
-        <h2> 実験的な開発 / ライブラリ</h2>
+        <h2 id="library"> <Anchor anchorId="library" /> 実験的な開発 / ライブラリ</h2>
         <SectionBox>
           <WorksSection
             title="picopico-pad"
@@ -165,7 +166,7 @@ export default function Home() {
       <WaveHorizon />
 
       <ArticleScreen content>
-        <h2>過去の作品たち</h2>
+        <h2 id="past"> <Anchor anchorId="past" /> 過去の作品たち</h2>
         <SectionBox>
           <WorksSection
             title="あいこんくらぶ"
