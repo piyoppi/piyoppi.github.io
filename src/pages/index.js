@@ -161,6 +161,19 @@ export default function Home() {
             />
           </WorksSection>
         </SectionBox>
+
+        <SectionBox>
+          <WorksSection
+            title="garakuta-font"
+            technicalElements={['Font']}
+          >
+            <p>アイコンフォント詰め合わせ</p>
+            <LibraryLinks
+              sourceCodeHref="https://github.com/piyoppi/map-editor"
+              sampleHref="https://garakuta-toolbox.com/pico2map"
+            />
+          </WorksSection>
+        </SectionBox>
       </ArticleScreen>
 
       <WaveHorizon />
