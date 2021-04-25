@@ -169,8 +169,8 @@ export default function Home() {
           >
             <p>アイコンフォント詰め合わせ</p>
             <LibraryLinks
-              sourceCodeHref="https://github.com/piyoppi/map-editor"
-              sampleHref="https://garakuta-toolbox.com/pico2map"
+              sourceCodeHref="https://github.com/piyoppi/garakuta-font"
+              sampleHref="https://garakuta-toolbox.com/garakuta-font"
             />
           </WorksSection>
         </SectionBox>
