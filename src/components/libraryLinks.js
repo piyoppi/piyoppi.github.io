@@ -1,5 +1,5 @@
 import React from "react"
-import styles from './libraryLinks.module.css'
+import * as styles from './libraryLinks.module.css'
 
 export default (props) => {
   return(

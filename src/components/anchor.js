@@ -1,5 +1,5 @@
 import React from "react"
-import styles from './anchor.module.css'
+import * as styles from './anchor.module.css'
 
 export default (props) => {
   return(

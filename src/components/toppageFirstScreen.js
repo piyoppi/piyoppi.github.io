@@ -1,7 +1,7 @@
 import React from "react"
 import ArticleScreen from "./articleScreen"
 import BottomNavigationArrow from "./bottomNavigationArrow"
-import styles from "./toppageFirstScreen.module.css"
+import * as styles from "./toppageFirstScreen.module.css"
 
 import piyoppiImage from "../../assets/images/sitting-piyoppi.png"
 import lightImage from "../../assets/images/light.png"

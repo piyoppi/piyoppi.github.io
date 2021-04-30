@@ -1,5 +1,5 @@
 import React from "react"
-import styles from './sectionBox.module.css'
+import * as styles from './sectionBox.module.css'
 
 export default (props) => {
   return(
