@@ -1,5 +1,5 @@
 import React from "react"
-import styles from './worksSection.module.css'
+import * as styles from './worksSection.module.css'
 
 export default (props) => {
   return(

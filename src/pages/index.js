@@ -10,7 +10,7 @@ import SEO from "./../components/seo"
 import WebFonts from "./../components/webFonts"
 import Footer from "./../components/footer"
 import "./index.css"
-import styles from './index.module.css'
+import * as styles from './index.module.css'
 
 import AuthorImage from './../../assets/image/author.png'
 import DunogeonLogo from './../../assets/image/mindan_logo.png'

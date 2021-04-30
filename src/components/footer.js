@@ -1,5 +1,5 @@
 import React from "react"
-import styles from './footer.module.css'
+import * as styles from './footer.module.css'
 
 import ToolboxImagte from './../../assets/image/toolbox.png'
 import HiyokoImagte from './../../assets/image/hiyoko-normal.png'
