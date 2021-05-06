@@ -151,12 +151,12 @@ export default function Home() {
 
         <SectionBox>
           <WorksSection
-            title="map-editor"
+            title="pico2map"
             technicalElements={['TypeScript', 'LitElement']}
           >
             <p>ブラウザ上で動く簡易ゲームマップエディタ（開発中）</p>
             <LibraryLinks
-              sourceCodeHref="https://github.com/piyoppi/map-editor"
+              sourceCodeHref="https://github.com/piyoppi/pico2map"
               sampleHref="https://garakuta-toolbox.com/pico2map/simple_map_editor/"
             />
           </WorksSection>
