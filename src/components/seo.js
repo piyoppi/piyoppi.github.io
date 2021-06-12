@@ -26,7 +26,9 @@ export default function SEO(props) {
     `
   )
 
-  const title = props.title ? `${props.title} | ${site.siteMetadata.title}` : site.siteMetadata.title
+  const title = props.title
+    ? `${props.title} | ${site.siteMetadata.title}`
+    : site.siteMetadata.title
   const description = props.description || site.siteMetadata.description
 
   return (
@@ -34,52 +36,52 @@ export default function SEO(props) {
       title={title}
       meta={[
         {
-          name: 'description',
-          content: description
+          name: "description",
+          content: description,
         },
         {
-          name: 'twitter:card',
-          content: site.siteMetadata.twitter.card
+          name: "twitter:card",
+          content: site.siteMetadata.twitter.card,
         },
         {
-          name: 'twitter:title',
-          content: title
+          name: "twitter:title",
+          content: title,
         },
         {
-          name: 'twitter:description',
-          content: description
+          name: "twitter:description",
+          content: description,
         },
         {
-          name: 'twitter:image',
-          content: site.siteMetadata.twitter.image
+          name: "twitter:image",
+          content: site.siteMetadata.twitter.image,
         },
         {
-          name: 'og:locale',
-          content: site.siteMetadata.og.locale
+          name: "og:locale",
+          content: site.siteMetadata.og.locale,
         },
         {
-          name: 'og:tyle',
-          content: 'website'
+          name: "og:tyle",
+          content: "website",
         },
         {
-          name: 'og:title',
-          content: title
+          name: "og:title",
+          content: title,
         },
         {
-          name: 'og:description',
-          content: description
+          name: "og:description",
+          content: description,
         },
         {
-          name: 'og:url',
-          content: site.siteMetadata.siteUrl
+          name: "og:url",
+          content: site.siteMetadata.siteUrl,
         },
         {
-          name: 'og:site_name',
-          content: site.siteMetadata.siteName
+          name: "og:site_name",
+          content: site.siteMetadata.siteName,
         },
         {
-          name: 'og:image',
-          content: site.siteMetadata.og.image
+          name: "og:image",
+          content: site.siteMetadata.og.image,
         },
       ]}
     />

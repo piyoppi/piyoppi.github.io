@@ -10,21 +10,21 @@ import SEO from "./../components/seo"
 import WebFonts from "./../components/webFonts"
 import Footer from "./../components/footer"
 import "./index.css"
-import * as styles from './index.module.css'
+import * as styles from "./index.module.css"
 
-import AuthorImage from './../../assets/image/author.png'
-import DunogeonLogo from './../../assets/image/mindan_logo.png'
-import PicopiyoLogo from './../../assets/image/picopiyo_logo.png'
-import IconClubLogo from './../../assets/image/iconclub_logo.png'
-import MemorianLogo from './../../assets/image/memorian_logo.png'
-import StageDesignerImage from './../../assets/image/stage-designer.png'
+import AuthorImage from "./../../assets/image/author.png"
+import DunogeonLogo from "./../../assets/image/mindan_logo.png"
+import PicopiyoLogo from "./../../assets/image/picopiyo_logo.png"
+import IconClubLogo from "./../../assets/image/iconclub_logo.png"
+import MemorianLogo from "./../../assets/image/memorian_logo.png"
+import StageDesignerImage from "./../../assets/image/stage-designer.png"
 
-import CrossKeyImage from './../../assets/image/crosskey.png'
-import ZKeyImage from './../../assets/image/zkey.png'
-import XKeyImage from './../../assets/image/xkey.png'
+import CrossKeyImage from "./../../assets/image/crosskey.png"
+import ZKeyImage from "./../../assets/image/zkey.png"
+import XKeyImage from "./../../assets/image/xkey.png"
 
 export default function Home() {
-  return(
+  return (
     <div>
       <WebFonts />
       <SEO />
@@ -40,11 +40,37 @@ export default function Home() {
             <img src={AuthorImage} alt="著者近影" />
           </div>
           <div className={styles.authorName}>ぴよっぴ</div>
-          <p>いろいろつくったりします。最近はウェブサービスをつくったりしています。</p>
+          <p>
+            いろいろつくったりします。最近はウェブサービスをつくったりしています。
+          </p>
           <ul className={styles.authorAccounts}>
-            <li><a href="https://twitter.com/piyorinpa" target="_blank" rel="noreferrer noopener">Twitter</a></li>
-            <li><a href="https://github.com/piyoppi" target="_blank" rel="noreferrer noopener">GitHub</a></li>
-            <li><a href="https://garakuta-toolbox.hatenablog.com" target="_blank" rel="noreferrer noopener">Blog</a></li>
+            <li>
+              <a
+                href="https://twitter.com/piyorinpa"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                Twitter
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://github.com/piyoppi"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                GitHub
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://garakuta-toolbox.hatenablog.com"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                Blog
+              </a>
+            </li>
           </ul>
         </div>
       </ArticleScreen>
@@ -52,32 +78,49 @@ export default function Home() {
       <div className={styles.waveBgWhite}></div>
 
       <ArticleScreen content>
-        <h2 id="works"> <Anchor anchorId="works" /> つくっているものたち</h2>
+        <h2 id="works">
+          {" "}
+          <Anchor anchorId="works" /> つくっているものたち
+        </h2>
 
         <SectionBox>
           <WorksSection
             title="みんなでつくるダンジョン"
             link="https://dungeon.garakuta-toolbox.com"
             logo={DunogeonLogo}
-            technicalElements={['Vue.js', 'Pixi.js', 'Ruby on Rails']}
+            technicalElements={["Vue.js", "Pixi.js", "Ruby on Rails"]}
           >
-            <iframe src="https://dungeon.garakuta-toolbox.com/player" className={styles.dungeonPlayer}></iframe>
+            <iframe
+              src="https://dungeon.garakuta-toolbox.com/player"
+              className={styles.dungeonPlayer}
+            ></iframe>
             <div className={styles.controllerKeys}>
-              <p>マップの読み込みが完了するまでお待ちください。クリックするとキー操作できます。</p>
+              <p>
+                マップの読み込みが完了するまでお待ちください。クリックするとキー操作できます。
+              </p>
               <div className={styles.controllerKey}>
-                <img src={CrossKeyImage} className={styles.crossKey} alt="十字キー" /> 移動
+                <img
+                  src={CrossKeyImage}
+                  className={styles.crossKey}
+                  alt="十字キー"
+                />{" "}
+                移動
               </div>
               <div className={styles.controllerKey}>
-                <img src={ZKeyImage} className={styles.charKey} alt="Zキー" /> ジャンプ
+                <img src={ZKeyImage} className={styles.charKey} alt="Zキー" />{" "}
+                ジャンプ
               </div>
               <div className={styles.controllerKey}>
-                <img src={XKeyImage} className={styles.charKey} alt="Xキー" /> 調べる
+                <img src={XKeyImage} className={styles.charKey} alt="Xキー" />{" "}
+                調べる
               </div>
             </div>
             <p>マップをつくって・つなげて・たんけんできるウェブサービスです</p>
             <ul>
               <li>上記のようなマップをかんたんにブラウザでつくれます</li>
-              <li>つくったマップは公開して他の人に遊んでもらうことができます</li>
+              <li>
+                つくったマップは公開して他の人に遊んでもらうことができます
+              </li>
               <li>じぶんや他の人のマップとつなげることができます</li>
               <li>マップをたんけんして遊ぶことができます</li>
             </ul>
@@ -89,12 +132,18 @@ export default function Home() {
             title="ぴこぴよ"
             link="https://picopiyo.garakuta-toolbox.com"
             logo={PicopiyoLogo}
-            technicalElements={['AWS Lambda + API Gateway', 'AWS S3 + CloudFront', 'React']}
+            technicalElements={[
+              "AWS Lambda + API Gateway",
+              "AWS S3 + CloudFront",
+              "React",
+            ]}
           >
             <p>ドット絵を拡大してツイッターに投稿できるサービスです</p>
 
             <ul>
-              <li>原寸大のドット絵を用意することで、ドット絵を拡大して投稿できます</li>
+              <li>
+                原寸大のドット絵を用意することで、ドット絵を拡大して投稿できます
+              </li>
               <li>原寸大のドット絵と拡大したドット絵を並べて投稿できます</li>
             </ul>
           </WorksSection>
@@ -104,11 +153,14 @@ export default function Home() {
       <WaveHorizon />
 
       <ArticleScreen content>
-        <h2 id="library"> <Anchor anchorId="library" /> 実験的な開発 / ライブラリ</h2>
+        <h2 id="library">
+          {" "}
+          <Anchor anchorId="library" /> 実験的な開発 / ライブラリ
+        </h2>
         <SectionBox>
           <WorksSection
             title="picopico-pad"
-            technicalElements={['JavaScript', 'GamePad API']}
+            technicalElements={["JavaScript", "GamePad API"]}
           >
             <p>ブラウザでゲームパッドをお手軽に使うためのライブラリ</p>
             <LibraryLinks
@@ -122,10 +174,19 @@ export default function Home() {
         <SectionBox>
           <WorksSection
             title="pixelart-element"
-            technicalElements={['JavaScript', 'Custom Elements']}
+            technicalElements={["JavaScript", "Custom Elements"]}
           >
             <p>ドット絵を拡大してもきれいに表示されるカスタム要素</p>
-            <p><a href="https://picopiyo.garakuta-toolbox.com" target="_blank" rel="noreferrer noopener">ぴこぴよv2</a> でも使われています</p>
+            <p>
+              <a
+                href="https://picopiyo.garakuta-toolbox.com"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                ぴこぴよv2
+              </a>{" "}
+              でも使われています
+            </p>
             <LibraryLinks
               packageHref="https://www.npmjs.com/package/@piyoppi/pixelart-element"
               sourceCodeHref="https://github.com/piyoppi/pixelart-element"
@@ -137,10 +198,15 @@ export default function Home() {
         <SectionBox>
           <WorksSection
             title="colision-detector"
-            technicalElements={['JavaScript']}
+            technicalElements={["JavaScript"]}
           >
             <p>2Dあたり判定ライブラリ</p>
-            <p><a href="https://dungeon.garakuta-toolbox.com">みんなでつくるダンジョン</a>のあたり判定にも使われています</p>
+            <p>
+              <a href="https://dungeon.garakuta-toolbox.com">
+                みんなでつくるダンジョン
+              </a>
+              のあたり判定にも使われています
+            </p>
             <LibraryLinks
               packageHref="https://www.npmjs.com/package/@piyoppi/colision-detector"
               sourceCodeHref="https://github.com/piyoppi/colision-detector"
@@ -152,7 +218,7 @@ export default function Home() {
         <SectionBox>
           <WorksSection
             title="pico2map"
-            technicalElements={['TypeScript', 'LitElement']}
+            technicalElements={["TypeScript", "LitElement"]}
           >
             <p>ブラウザ上で動く簡易ゲームマップエディタ（開発中）</p>
             <LibraryLinks
@@ -163,10 +229,7 @@ export default function Home() {
         </SectionBox>
 
         <SectionBox>
-          <WorksSection
-            title="garakuta-font"
-            technicalElements={['Font']}
-          >
+          <WorksSection title="garakuta-font" technicalElements={["Font"]}>
             <p>アイコンフォント詰め合わせ</p>
             <LibraryLinks
               sourceCodeHref="https://github.com/piyoppi/garakuta-font"
@@ -176,14 +239,15 @@ export default function Home() {
         </SectionBox>
 
         <SectionBox>
-          <WorksSection
-            title="reportbox"
-            technicalElements={['TypeScript']}
-          >
-            <p>JSON Schemaでつくるお手軽アンケートフォームと回答収集システム（<a href="https://garakuta-toolbox.hatenablog.com/entry/2021/06/08/235813">ブログ記事</a>）</p>
-            <LibraryLinks
-              sourceCodeHref="https://github.com/piyoppi/report-box"
-            />
+          <WorksSection title="reportbox" technicalElements={["TypeScript"]}>
+            <p>
+              JSON Schemaでつくるお手軽アンケートフォームと回答収集システム（
+              <a href="https://garakuta-toolbox.hatenablog.com/entry/2021/06/08/235813">
+                ブログ記事
+              </a>
+              ）
+            </p>
+            <LibraryLinks sourceCodeHref="https://github.com/piyoppi/report-box" />
           </WorksSection>
         </SectionBox>
       </ArticleScreen>
@@ -191,20 +255,27 @@ export default function Home() {
       <WaveHorizon />
 
       <ArticleScreen content>
-        <h2 id="past"> <Anchor anchorId="past" /> 過去の作品たち</h2>
+        <h2 id="past">
+          {" "}
+          <Anchor anchorId="past" /> 過去の作品たち
+        </h2>
         <SectionBox>
           <WorksSection
             title="あいこんくらぶ"
             link="https://iconclub.jp"
             logo={IconClubLogo}
-            technicalElements={['PHP', 'JavaScript']}
+            technicalElements={["PHP", "JavaScript"]}
           >
             <p>(公開期間: 2015/06 ～ 2020/02)</p>
             <p>ブラウザでドット絵を描いて公開できるサービスです</p>
             <ul>
-              <li>お手持ちのドット絵をアップロードして公開できます（おおきさ256px四方まで）</li>
+              <li>
+                お手持ちのドット絵をアップロードして公開できます（おおきさ256px四方まで）
+              </li>
               <li>ドット絵エディタ（PC/スマートフォン対応）で絵が描けます</li>
-              <li>ライセンス付きドット絵や、利用規約付きドット絵を配布することができます</li>
+              <li>
+                ライセンス付きドット絵や、利用規約付きドット絵を配布することができます
+              </li>
             </ul>
           </WorksSection>
         </SectionBox>
@@ -214,9 +285,12 @@ export default function Home() {
             title="めもりあん"
             link="http://garakuta-toolbox.moo.jp/memorian"
             logo={MemorianLogo}
-            technicalElements={['Chrome Extensions', 'Vue.js']}
+            technicalElements={["Chrome Extensions", "Vue.js"]}
           >
-            <p>コードの断片をかんたんにメモすることができるChrome拡張機能です。 メモした情報はタグ付けしたり、あとから検索することができます。</p>
+            <p>
+              コードの断片をかんたんにメモすることができるChrome拡張機能です。
+              メモした情報はタグ付けしたり、あとから検索することができます。
+            </p>
           </WorksSection>
         </SectionBox>
 
@@ -225,7 +299,7 @@ export default function Home() {
             title="ステージデザイナー"
             link="http://garakuta-toolbox.moo.jp"
             logo={StageDesignerImage}
-            technicalElements={['Visual Basic', 'C++', 'DirectX']}
+            technicalElements={["Visual Basic", "C++", "DirectX"]}
           >
             <p>アクションゲームを簡単に作れるツールです（現在は開発中止）</p>
             <p>がらくたツールボックスとしてのさいしょのプロジェクトです。</p>

@@ -5,19 +5,19 @@
  */
 
 module.exports = {
-  plugins: ['gatsby-plugin-react-helmet'],
+  plugins: ["gatsby-plugin-react-helmet"],
   siteMetadata: {
-    title: 'がらくたツールボックス',
-    siteName: 'がらくたツールボックス',
-    description: 'ぴよっぴのつくったものたちをまとめています',
-    siteUrl: 'https://garakuta-toolbox.com',
+    title: "がらくたツールボックス",
+    siteName: "がらくたツールボックス",
+    description: "ぴよっぴのつくったものたちをまとめています",
+    siteUrl: "https://garakuta-toolbox.com",
     twitter: {
-      card: 'summary_large_image',
-      image: 'https://garakuta-toolbox.com/og_image.png'
+      card: "summary_large_image",
+      image: "https://garakuta-toolbox.com/og_image.png",
     },
     og: {
-      locale: 'ja_JP',
-      image: 'https://garakuta-toolbox.com/og_image.png'
-    }
+      locale: "ja_JP",
+      image: "https://garakuta-toolbox.com/og_image.png",
+    },
   },
 }

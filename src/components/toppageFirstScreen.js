@@ -15,7 +15,7 @@ import workingImage from "../../assets/images/working.png"
 import displayImage from "../../assets/images/working-display.png"
 
 export default function Home() {
-  return(
+  return (
     <ArticleScreen fullScreen>
       <div className={styles.toppageBoundary}>
         <h1 className={styles.title}>がらくたツールボックス</h1>
