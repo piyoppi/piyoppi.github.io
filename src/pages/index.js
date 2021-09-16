@@ -220,11 +220,36 @@ export default function Home() {
             title="pico2map"
             technicalElements={["TypeScript", "LitElement"]}
           >
-            <p>ブラウザ上で動く簡易ゲームマップエディタ（開発中）</p>
+            <p>ブラウザ上で動く簡易ゲームマップエディタ</p>
+            <p>
+              <a href="https://dungeon.garakuta-toolbox.com">
+                みんなでつくるダンジョン
+              </a>
+              で使われています
+            </p>
             <LibraryLinks
               sourceCodeHref="https://github.com/piyoppi/pico2map"
               sampleHref="https://garakuta-toolbox.com/pico2map/simple_map_editor/"
             />
+          </WorksSection>
+        </SectionBox>
+
+        <SectionBox>
+          <WorksSection
+            title="actions-labeled-duration"
+            technicalElements={["JavaScript", "GitHub Actions"]}
+          >
+            <p>
+              GitHub
+              Issueに関連付けられたプロジェクト内の状態やラベルが貼られた期間をIssueにコメントするGitHub
+              Actions
+            </p>
+            <p>
+              <a href="https://garakuta-toolbox.hatenablog.com/entry/2021/06/08/235813">
+                ブログ記事
+              </a>
+            </p>
+            <LibraryLinks sourceCodeHref="https://github.com/piyoppi/actions-labeled-duration" />
           </WorksSection>
         </SectionBox>
 
