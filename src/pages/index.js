@@ -245,7 +245,7 @@ export default function Home() {
               Actions
             </p>
             <p>
-              <a href="https://garakuta-toolbox.hatenablog.com/entry/2021/06/08/235813">
+              <a href="https://garakuta-toolbox.hatenablog.com/entry/2021/09/11/175948">
                 ブログ記事
               </a>
             </p>
