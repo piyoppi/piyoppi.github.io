@@ -90,31 +90,6 @@ export default function Home() {
             logo={DunogeonLogo}
             technicalElements={["Vue.js", "Pixi.js", "Ruby on Rails"]}
           >
-            <iframe
-              src="https://dungeon.garakuta-toolbox.com/player"
-              className={styles.dungeonPlayer}
-            ></iframe>
-            <div className={styles.controllerKeys}>
-              <p>
-                マップの読み込みが完了するまでお待ちください。クリックするとキー操作できます。
-              </p>
-              <div className={styles.controllerKey}>
-                <img
-                  src={CrossKeyImage}
-                  className={styles.crossKey}
-                  alt="十字キー"
-                />{" "}
-                移動
-              </div>
-              <div className={styles.controllerKey}>
-                <img src={ZKeyImage} className={styles.charKey} alt="Zキー" />{" "}
-                ジャンプ
-              </div>
-              <div className={styles.controllerKey}>
-                <img src={XKeyImage} className={styles.charKey} alt="Xキー" />{" "}
-                調べる
-              </div>
-            </div>
             <p>マップをつくって・つなげて・たんけんできるウェブサービスです</p>
             <ul>
               <li>上記のようなマップをかんたんにブラウザでつくれます</li>
