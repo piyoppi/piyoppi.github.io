@@ -9,6 +9,7 @@ import Anchor from "./../components/anchor"
 import SEO from "./../components/seo"
 import WebFonts from "./../components/webFonts"
 import Footer from "./../components/footer"
+import { Link } from 'gatsby'
 import "./index.css"
 import * as styles from "./index.module.css"
 
@@ -18,10 +19,6 @@ import PicopiyoLogo from "./../../assets/image/picopiyo_logo.png"
 import IconClubLogo from "./../../assets/image/iconclub_logo.png"
 import MemorianLogo from "./../../assets/image/memorian_logo.png"
 import StageDesignerImage from "./../../assets/image/stage-designer.png"
-
-import CrossKeyImage from "./../../assets/image/crosskey.png"
-import ZKeyImage from "./../../assets/image/zkey.png"
-import XKeyImage from "./../../assets/image/xkey.png"
 
 export default function Home() {
   return (
@@ -35,7 +32,9 @@ export default function Home() {
 
       <ArticleScreen content gray>
         <div className={styles.author}>
-          <h2>著者近影など</h2>
+          <h2 id="intro">
+            著者近影など
+          </h2>
           <div className={styles.authorImage}>
             <img src={AuthorImage} alt="著者近影" />
           </div>
@@ -68,8 +67,15 @@ export default function Home() {
                 target="_blank"
                 rel="noreferrer noopener"
               >
-                Blog
+                Blog(old)
               </a>
+            </li>
+            <li>
+              <Link
+                to="/weblog"
+              >
+                Blog
+              </Link>
             </li>
           </ul>
         </div>

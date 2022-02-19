@@ -1,0 +1,10 @@
+.postDate {
+  font-size: 10pt;
+  color: gray;
+  display: block;
+}
+
+.postTitle {
+  font-size: 16pt;
+  text-decoration: none;
+}

@@ -13,6 +13,7 @@ import moonImage from "../../assets/images/moon.png"
 import windowImage from "../../assets/images/window.png"
 import workingImage from "../../assets/images/working.png"
 import displayImage from "../../assets/images/working-display.png"
+import { Link } from "gatsby"
 
 export default function Home() {
   return (
@@ -44,8 +45,15 @@ export default function Home() {
         <img className={styles.windowImage} src={windowImage} alt="" />
 
         <div className={styles.summary}>
-          ここは、趣味でつくったいろいろなものをまとめたりするウェブサイトです
         </div>
+
+        <nav className={styles.toppageFirestScreenNav}>
+          <ul>
+            <li><Link to="/weblog">&#x1f4d9; ウェブログ</Link></li>
+            <li><a href="#intro">&#x1f464; 著者近影</a></li>
+            <li><a href="#works">&#x1f527; つくっているもの</a></li>
+          </ul>
+        </nav>
 
         <BottomNavigationArrow />
       </div>

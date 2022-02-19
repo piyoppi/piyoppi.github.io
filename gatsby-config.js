@@ -1,11 +1,28 @@
-/**
- * Configure your Gatsby site with this file.
- *
- * See: https://www.gatsbyjs.org/docs/gatsby-config/
- */
-
 module.exports = {
-  plugins: ["gatsby-plugin-react-helmet"],
+  plugins: [
+    "gatsby-plugin-react-helmet",
+    "gatsby-plugin-sharp",
+    "gatsby-remark-autolink-headers",
+    "gatsby-remark-images",
+    "gatsby-remark-prismjs",
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: 'blog',
+        path: `${__dirname}/assets/posts`
+      }
+    },
+    {
+      resolve: "gatsby-plugin-mdx",
+      options: {
+        gatsbyRemarkPlugins: [
+          "gatsby-remark-prismjs",
+          "gatsby-remark-autolink-headers",
+          "gatsby-remark-images"
+        ]
+      }
+    },
+  ],
   siteMetadata: {
     title: "がらくたツールボックス",
     siteName: "がらくたツールボックス",

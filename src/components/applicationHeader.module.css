@@ -1,0 +1,33 @@
+.applicationHeader ul {
+  margin: 0;
+  padding: 10px;
+  list-style-type: none;
+  display: flex;
+  background-color: whitesmoke;
+}
+
+.applicationHeader ul li a {
+  padding: 10px 20px;
+  display: block;
+  text-decoration: none;
+  color: gray;
+}
+
+.applicationHeader ul li {
+  border-radius: 5px;
+  margin: 5px 5px;
+}
+
+.applicationHeader ul li:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.viewingMarker {
+  border-bottom: solid 3px rgba(0, 0, 0, 0.1);
+  background: rgba(100, 100, 100, 0.1);
+}
+
+.wave {
+  box-sizing: border-box;
+  margin-top: -5px;
+}

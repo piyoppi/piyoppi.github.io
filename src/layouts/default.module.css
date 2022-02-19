@@ -1,0 +1,14 @@
+.outer {
+  min-height: calc(100vh - 160px);
+}
+
+.footer {
+  width: 100%;
+  bottom: 0;
+}
+
+.body {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 15px;
+}

@@ -14,16 +14,13 @@ footer {
   text-align: center;
 }
 
-.footerToolboxImage {
-  position: absolute;
-  width: 250px;
-  left: 20px;
-  bottom: 0;
-}
-
 .footerHiyokoImage {
   position: absolute;
   width: 70px;
   right: 20px;
   bottom: 0;
+}
+
+.wave {
+  margin-bottom: -5px;
 }

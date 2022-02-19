@@ -1,0 +1,16 @@
+.headerLogo {
+  margin: 60px auto;
+  font-family: "M PLUS Rounded 1c";
+  text-align: center;
+}
+
+.headerLogoImage {
+  width: 40%;
+  max-width: 200px;
+}
+
+@media screen and (max-width: 600px) {
+  .headerLogo {
+    font-size: 10pt;
+  }
+}

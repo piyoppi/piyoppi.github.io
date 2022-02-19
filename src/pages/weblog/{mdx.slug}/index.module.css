@@ -1,0 +1,16 @@
+.headingNavigation {
+  margin-top: 40px;
+}
+
+.headingNavigation a, .headingNavigation a:visited {
+  color: gray;
+}
+
+.postTitle {
+  text-align: center;
+}
+
+.postTitle a, .postTitle a:visited {
+  text-decoration: none;
+  color: #333;
+}
