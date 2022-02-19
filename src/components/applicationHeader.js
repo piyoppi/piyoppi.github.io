@@ -1,6 +1,7 @@
 import React from "react"
 import { Link } from 'gatsby'
 import Wave from './wave'
+import { useLocation } from "@reach/router"
 import * as styles from './applicationHeader.module.css'
 
 export default function ApplicationHeader() {
@@ -16,13 +17,14 @@ export default function ApplicationHeader() {
       matchRegExp: new RegExp('^\/weblog.*')
     },
   ]
+  const location = useLocation()
 
   return (
     <nav className={styles.applicationHeader}>
       <ul>
         {links.map(
           link => (
-            <li key={link.href} className={window.location.pathname.match(link.matchRegExp) ? styles.viewingMarker : ''}>
+            <li key={link.href} className={location.pathname.match(link.matchRegExp) ? styles.viewingMarker : ''}>
               <Link to={link.href}>{link.caption}</Link>
             </li>
           )
