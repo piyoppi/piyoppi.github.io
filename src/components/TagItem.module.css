@@ -1,0 +1,14 @@
+.tagItem {
+  margin-right: 10px;
+  font-size: 9pt;
+  color: gray;
+}
+
+.tagItem a, .tagItem a:visited {
+  color: darkgray;
+  text-decoration: none;
+}
+
+.tagItem a:hover {
+  text-decoration: underline;
+}

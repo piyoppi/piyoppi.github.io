@@ -1,11 +1,3 @@
-.headingNavigation {
-  margin-top: 40px;
-}
-
-.headingNavigation a, .headingNavigation a:visited {
-  color: gray;
-}
-
 .postTitle {
   text-align: center;
 }
@@ -13,4 +5,18 @@
 .postTitle a, .postTitle a:visited {
   text-decoration: none;
   color: #333;
+}
+
+.articleSummary {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+
+.articleSummary time {
+  border-left: 1px solid gainsboro;
+  padding: 0 10px;
+  font-size: 10pt;
+  color: gray;
+  display: block;
 }

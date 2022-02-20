@@ -1,0 +1,8 @@
+.headingNavLinksContainer {
+  margin-top: 40px;
+}
+
+.headingNavLinksContainer a, .headingNavLinksContainer a:visited {
+  color: gray;
+}
+

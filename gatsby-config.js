@@ -76,6 +76,9 @@ module.exports = {
     siteName: "がらくたツールボックス",
     description: "ぴよっぴのつくったものたちをまとめています",
     siteUrl: "https://garakuta-toolbox.com",
+    weblog: {
+      tagPath: '/weblog/tags/'
+    },
     twitter: {
       card: "summary_large_image",
       image: "https://garakuta-toolbox.com/og_image.png",

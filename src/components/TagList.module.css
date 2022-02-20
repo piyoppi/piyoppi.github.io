@@ -1,0 +1,9 @@
+.tagContainer {
+  list-style-type: none;
+  display: flex;
+  padding: 0;
+}
+
+.tagContainer li {
+  margin: 2px;
+}

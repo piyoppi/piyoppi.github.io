@@ -8,3 +8,30 @@
   font-size: 16pt;
   text-decoration: none;
 }
+
+.articleSummary {
+  display: flex;
+  align-items: center;
+}
+
+.articleSummary time {
+  border-right: 1px solid gainsboro;
+  padding-right: 16px;
+  margin-right: 16px;
+  font-size: 10pt;
+  color: gray;
+  display: block;
+}
+
+@media screen and (max-width: 500px) {
+  .articleSummary {
+    flex-direction: column;
+    justify-content: left;
+    align-items: flex-start;
+  }
+
+  .articleSummary time {
+    border: none;
+    padding: 0;
+  }
+}

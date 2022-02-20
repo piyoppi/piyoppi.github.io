@@ -4,6 +4,7 @@ import * as styles from './index.module.css'
 import { useStaticQuery, graphql } from 'gatsby'
 import Layout from './../../layouts/default'
 import ToolboxImagte from "./../../../assets/image/toolbox.png"
+import { createPostsFromMdx } from '../../lib/posts'
 
 export default function Weblog() {
   const data = useStaticQuery(graphql`
@@ -13,17 +14,14 @@ export default function Weblog() {
           frontmatter {
             title
             date
+            tags
           }
           slug
         }
       }
     }`)
 
-  const posts = data.allMdx.nodes.map(item => ({
-    title: item.frontmatter.title,
-    date: item.frontmatter.date,
-    url: `/weblog/${item.slug}`
-  }))
+  const posts = data.allMdx.nodes.map(item => createPostsFromMdx(item))
 
   return (
     <Layout title="ウェブログ">

@@ -19,10 +19,3 @@
 .blogArticle .gatsby-highlight pre {
   border-radius: 5px;
 }
-
-.blogArticle time {
-  font-size: 10pt;
-  color: gray;
-  display: block;
-  text-align: right;
-}

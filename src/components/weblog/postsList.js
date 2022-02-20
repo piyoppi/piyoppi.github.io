@@ -7,7 +7,7 @@ export default function PostsList(props) {
     <ul className={styles.postsList}>
       {props.posts.map(item => (
         <li key={item.url} className={styles.postsItemBoundary}>
-          <PostsListItem url={item.url} title={item.title} date={item.date}/>
+          <PostsListItem url={item.url} title={item.title} date={item.date} tags={item.tags} />
         </li>
       ))}
     </ul>
