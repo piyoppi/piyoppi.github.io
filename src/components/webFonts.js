@@ -6,11 +6,15 @@ export default function WebFonts() {
     <Helmet>
       <link
         href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c"
-        rel="stylesheet"
+        rel="preload"
+        as="style"
+        onload="this.rel='stylesheet'"
       />
       <link
         href="https://fonts.googleapis.com/icon?family=Material+Icons"
-        rel="stylesheet"
+        rel="preload"
+        as="style"
+        onload="this.rel='stylesheet'"
       />
     </Helmet>
   )
