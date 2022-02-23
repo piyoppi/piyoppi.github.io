@@ -61,6 +61,13 @@ module.exports = {
       }
     },
     {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: 'cards',
+        path: `${__dirname}/assets/top`
+      }
+    },
+    {
       resolve: "gatsby-plugin-mdx",
       options: {
         gatsbyRemarkPlugins: [
@@ -70,6 +77,7 @@ module.exports = {
         ]
       }
     },
+     `gatsby-transformer-yaml`,
   ],
   siteMetadata: {
     title: "がらくたツールボックス",

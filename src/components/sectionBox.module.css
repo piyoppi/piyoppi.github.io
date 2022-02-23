@@ -10,3 +10,6 @@
   box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.1);
 }
 
+.workingSection a, .workingSection a:visited {
+  color: #777;
+}
