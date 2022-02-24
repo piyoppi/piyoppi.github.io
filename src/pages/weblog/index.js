@@ -9,7 +9,7 @@ import { createPostsFromMdx } from '../../lib/posts'
 export default function Weblog() {
   const data = useStaticQuery(graphql`
     query {
-      allMdx(filter: {}, sort: {fields: frontmatter___date, order: DESC}) {
+      allMdx(filter: {frontmatter: {page: {eq: "/weblog/"}}},sort: {fields: frontmatter___date, order: DESC}) {
         nodes {
           frontmatter {
             title

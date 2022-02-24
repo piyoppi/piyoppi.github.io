@@ -2,11 +2,11 @@ import * as React from 'react'
 import { graphql, Link } from 'gatsby'
 import { MDXRenderer } from 'gatsby-plugin-mdx'
 import { useLocation } from "@reach/router"
-import Layout from './../../../layouts/default'
-import * as styles from './index.module.css'
+import Layout from '../layouts/default'
+import * as styles from './post.module.css'
 import './slug.css'
-import TagList from '../../../components/TagList'
-import HeadingNavLinksContainer from '../../../components/HeadingNavLinksContainer'
+import TagList from '../components/TagList'
+import HeadingNavLinksContainer from '../components/HeadingNavLinksContainer'
 
 export default function BlogPost({ data }) {
   const description = data.mdx.rawBody.replace(/\n/g, '').replace(/(--+).*?(--+)/g, '').substr(0, 100) + '...'
