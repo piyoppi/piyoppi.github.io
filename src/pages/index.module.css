@@ -52,7 +52,7 @@
 }
 
 .wave {
-  background-image: url("./../../assets/image/wave.png");
+  background-image: url("./../../assets/images/wave.png");
   background-color: #1a3b52;
   width: 100%;
   height: 30px;
@@ -60,7 +60,7 @@
 }
 
 .waveBgWhite {
-  background-image: url("./../../assets/image/wave-bg-white.png");
+  background-image: url("./../../assets/images/wave-bg-white.png");
   background-color: #e9e9e9;
   width: 100%;
   height: 30px;

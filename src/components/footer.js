@@ -2,7 +2,7 @@ import React from "react"
 import * as styles from "./footer.module.css"
 
 import Wave from './wave'
-import HiyokoImagte from "./../../assets/image/hiyoko-normal.png"
+import HiyokoImagte from "./../../assets/images/hiyoko-normal.png"
 
 export default props => {
   return (

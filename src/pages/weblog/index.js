@@ -3,7 +3,7 @@ import PostsList from '../../components/weblog/postsList'
 import * as styles from './index.module.css'
 import { useStaticQuery, graphql } from 'gatsby'
 import Layout from './../../layouts/default'
-import ToolboxImagte from "./../../../assets/image/toolbox.png"
+import ToolboxImage from "./../../../assets/images/toolbox.png"
 import { createPostsFromMdx } from '../../lib/posts'
 
 export default function Weblog() {
@@ -26,7 +26,7 @@ export default function Weblog() {
   return (
     <Layout title="ウェブログ">
       <header className={styles.headerLogo}>
-        <img src={ToolboxImagte} alt="" className={styles.headerLogoImage}/>
+        <img src={ToolboxImage} alt="" className={styles.headerLogoImage}/>
         <h1>がらくたツールボックスのウェブログ</h1>
       </header>
       <PostsList posts={posts} />

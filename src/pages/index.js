@@ -13,7 +13,7 @@ import { MDXRenderer } from 'gatsby-plugin-mdx'
 import "./index.css"
 import * as styles from "./index.module.css"
 
-import AuthorImage from "./../../assets/image/author.png"
+import AuthorImage from "./../../assets/images/author.png"
 
 export default function Home() {
   const data = useStaticQuery(graphql`
