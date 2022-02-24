@@ -24,17 +24,19 @@ module.exports = {
           {
             serialize: ({ query: {site, allMdx} }) => {
               return allMdx.nodes.map(node => {
+                const url = `${site.siteMetadata.siteUrl}/weblog/${node.slug}`
+
                 return Object.assign({}, node.frontmatter, {
                   description: node.excerpt,
                   date: node.frontmatter.date,
-                  url: site.siteMetadata.siteUrl + node.slug,
-                  guid: site.siteMetadata.siteUrl + node.slug,
+                  url,
+                  guid: url,
                 })
               })
             },
             query: `
               {
-                allMdx(sort: {order: DESC, fields: frontmatter___date}) {
+                allMdx(filter: {fileAbsolutePath: {regex: "/posts/"}},sort: {order: DESC, fields: frontmatter___date}) {
                   nodes {
                     frontmatter {
                       title
@@ -47,8 +49,7 @@ module.exports = {
               }
             `,
             output: "/rss.xml",
-            title: "garakuta-toolbox weblog",
-            match: "^/weblog/",
+            title: "garakuta-toolbox weblog"
           },
         ]
       },
