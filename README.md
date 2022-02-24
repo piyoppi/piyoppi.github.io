@@ -1,6 +1,8 @@
 # garakuta-toolbox.com
 
-がらくたツールボックスのウェブサイトです
+がらくたツールボックスのウェブサイト（のテンプレート）です
+
+https://garakuta-toolbox.com
 
 ## 開発
 
