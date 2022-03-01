@@ -21,7 +21,7 @@
     "react-helmet": "^6.1.0"
   },
   "devDependencies": {
-    "gatsby-plugin-mdx": "^3.8.1",
+    "gatsby-plugin-mdx": "^3.9.0",
     "gatsby-plugin-sharp": "^4.8.1",
     "gatsby-remark-autolink-headers": "^5.8.0",
     "gatsby-remark-images": "^6.8.1",
