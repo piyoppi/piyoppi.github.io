@@ -74,7 +74,13 @@ module.exports = {
         gatsbyRemarkPlugins: [
           "gatsby-remark-prismjs",
           "gatsby-remark-autolink-headers",
-          "gatsby-remark-images"
+          "gatsby-remark-images",
+          {
+            resolve: 'gatsby-remark-copy-linked-files',
+            options: {
+              ignoreFileExtensions: ['bmp', 'png', 'jpg', 'jpeg'],
+            },
+          }
         ]
       }
     },
