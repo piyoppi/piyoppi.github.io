@@ -27,3 +27,9 @@
 .blogArticle .gatsby-highlight pre {
   border-radius: 5px;
 }
+
+.blogArticle img[src$=".gif"] {
+  display: block;
+  margin: 0 auto;
+  max-width: 650px;
+}
