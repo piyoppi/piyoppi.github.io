@@ -9,7 +9,7 @@ import TagList from '../components/TagList'
 import HeadingNavLinksContainer from '../components/HeadingNavLinksContainer'
 
 export default function BlogPost({ data }) {
-  const description = data.mdx.rawBody.replace(/\n/g, '').replace(/(--+).*?(--+)/g, '').substr(0, 100) + '...'
+  const description = data.mdx.excerpt
   const location = useLocation()
 
   return (
@@ -45,6 +45,6 @@ export const query = graphql`
         tags
       }
       body
-      rawBody
+      excerpt(pruneLength: 100, truncate: true)
     }
   }`
