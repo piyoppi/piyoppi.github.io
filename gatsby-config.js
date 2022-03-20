@@ -84,7 +84,8 @@ module.exports = {
         ]
       }
     },
-     `gatsby-transformer-yaml`,
+    'gatsby-transformer-yaml',
+    'gatsby-plugin-sitemap'
   ],
   siteMetadata: {
     title: "がらくたツールボックス",
