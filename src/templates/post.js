@@ -36,16 +36,21 @@ export default function BlogPost({ data }) {
           { data.mdx.body }
         </MDXRenderer>
 
-        <counter-container apiurl={data.site.siteMetadata.counterUrl}>
-          <counter-increment-button>
-            <span>
-              &#x1f31f;
-              <counter-display>
-                <span slot="loading">...</span>
-              </counter-display>
-            </span>
-          </counter-increment-button>
-        </counter-container>
+        <div className={styles.counterSection}>
+          <counter-container apiurl={data.site.siteMetadata.counterUrl}>
+            <counter-increment-button>
+              <span className={styles.likeButton}>
+                &#x1f31f;
+                <span className={styles.likeCount}>
+                  <counter-display>
+                    <span slot="loading">...</span>
+                    <span slot="error">0</span>
+                  </counter-display>
+                </span>
+              </span>
+            </counter-increment-button>
+          </counter-container>
+        </div>
       </article>
     </Layout>
   )
