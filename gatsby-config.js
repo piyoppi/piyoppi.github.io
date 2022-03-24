@@ -92,6 +92,7 @@ module.exports = {
     siteName: "がらくたツールボックス",
     description: "ぴよっぴのつくったものたちをまとめています",
     siteUrl: "https://garakuta-toolbox.com",
+    counterUrl: "",
     weblog: {
       tagPath: '/weblog/tags/'
     },

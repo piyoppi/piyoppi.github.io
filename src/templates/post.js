@@ -1,4 +1,4 @@
-import * as React from 'react'
+import React, { useState, useEffect } from 'react';
 import { graphql, Link } from 'gatsby'
 import { MDXRenderer } from 'gatsby-plugin-mdx'
 import { useLocation } from "@reach/router"
@@ -11,6 +11,10 @@ import HeadingNavLinksContainer from '../components/HeadingNavLinksContainer'
 export default function BlogPost({ data }) {
   const description = data.mdx.excerpt
   const location = useLocation()
+
+  useEffect(() => {
+    import('@piyoppi/counter-button')
+  })
 
   return (
     <Layout title={data.mdx.frontmatter.title} description={description}>
@@ -31,6 +35,17 @@ export default function BlogPost({ data }) {
         <MDXRenderer>
           { data.mdx.body }
         </MDXRenderer>
+
+        <counter-container apiurl={data.site.siteMetadata.counterUrl}>
+          <counter-increment-button>
+            <span>
+              &#x1f31f;
+              <counter-display>
+                <span slot="loading">...</span>
+              </counter-display>
+            </span>
+          </counter-increment-button>
+        </counter-container>
       </article>
     </Layout>
   )
@@ -46,5 +61,10 @@ export const query = graphql`
       }
       body
       excerpt(pruneLength: 100, truncate: true)
+    }
+    site {
+      siteMetadata {
+        counterUrl
+      }
     }
   }`
