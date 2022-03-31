@@ -33,3 +33,26 @@
   margin: 0 auto;
   max-width: 650px;
 }
+
+.blogArticle table {
+  border-spacing: 0;
+}
+
+.blogArticle table th, .blogArticle table td {
+  border-style: solid dotted solid solid;
+  border-color: gainsboro;
+  border-width: 0 1px 1px 0;
+  padding: 10px;
+}
+
+.blogArticle table th {
+  border-width: 1px 1px 1px 0;
+}
+
+.blogArticle table td:last-child {
+  border-width: 0 0 1px 0;
+}
+
+.blogArticle table th:last-child {
+  border-width: 1px 0 1px 0;
+}
