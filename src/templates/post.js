@@ -50,6 +50,10 @@ export default function BlogPost({ data }) {
               </span>
             </counter-increment-button>
           </counter-container>
+          <div className={styles.counterNote}>
+            <p>このカウンタは <a href="https://github.com/piyoppi/counter-tools">@piyoppi/counter-tools</a> を使っています。</p>
+            <p>クリックすると匿名でいいねできます。</p>
+          </div>
         </div>
       </article>
     </Layout>
