@@ -34,7 +34,7 @@
     "prettier": "2.7.1",
     "prismjs": "^1.28.0",
     "rehype-katex": "^5.0.0",
-    "remark-math": "^3.0.1"
+    "remark-math": "^5.1.1"
   },
   "repository": {
     "type": "git",
