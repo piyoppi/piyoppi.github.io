@@ -7,6 +7,7 @@ import * as styles from './post.module.css'
 import './slug.css'
 import TagList from '../components/TagList'
 import HeadingNavLinksContainer from '../components/HeadingNavLinksContainer'
+import 'katex/dist/katex.min.css'
 
 export default function BlogPost({ data }) {
   const description = data.mdx.excerpt

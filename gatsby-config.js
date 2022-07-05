@@ -80,8 +80,14 @@ module.exports = {
             options: {
               ignoreFileExtensions: ['bmp', 'png', 'jpg', 'jpeg'],
             },
-          }
-        ]
+          },
+        ],
+        remarkPlugins: [
+          require('remark-math'),
+        ],
+        rehypePlugins: [
+          [require('rehype-katex'), { strict: 'ignore' }],
+        ],
       }
     },
     'gatsby-transformer-yaml',
