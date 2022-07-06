@@ -25,7 +25,7 @@
   "devDependencies": {
     "gatsby-plugin-mdx": "^3.17.0",
     "gatsby-plugin-sharp": "^4.17.0",
-    "gatsby-plugin-sitemap": "^5.17.0",
+    "gatsby-plugin-sitemap": "^5.18.0",
     "gatsby-remark-autolink-headers": "^5.17.0",
     "gatsby-remark-images": "^6.17.0",
     "gatsby-remark-prismjs": "^6.17.0",
