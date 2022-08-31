@@ -31,7 +31,7 @@
     "gatsby-remark-autolink-headers": "^5.20.0",
     "gatsby-remark-images": "^6.20.0",
     "gatsby-remark-prismjs": "^6.20.0",
-    "gatsby-source-filesystem": "^4.20.0",
+    "gatsby-source-filesystem": "^4.22.0",
     "gatsby-transformer-yaml": "^4.20.0",
     "prettier": "2.7.1",
     "prismjs": "^1.28.0",
