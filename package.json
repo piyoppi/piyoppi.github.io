@@ -34,7 +34,7 @@
     "gatsby-source-filesystem": "^4.23.0",
     "gatsby-transformer-yaml": "^4.23.0",
     "prettier": "2.7.1",
-    "prismjs": "^1.28.0",
+    "prismjs": "^1.29.0",
     "rehype-katex": "^5.0.0",
     "remark-math": "^3.0.1"
   },
