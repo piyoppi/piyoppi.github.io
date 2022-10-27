@@ -8,8 +8,8 @@ import Anchor from "./../components/anchor"
 import SEO from "./../components/seo"
 import WebFonts from "./../components/webFonts"
 import Footer from "./../components/footer"
-import { Link, useStaticQuery, graphql } from 'gatsby'
-import { MDXRenderer } from 'gatsby-plugin-mdx'
+import { Link, useStaticQuery, graphql } from "gatsby"
+import { MDXRenderer } from "gatsby-plugin-mdx"
 import "./index.css"
 import * as styles from "./index.module.css"
 
@@ -18,7 +18,10 @@ import AuthorImage from "./../../assets/images/author.png"
 export default function Home() {
   const data = useStaticQuery(graphql`
     {
-      allMdx(filter: {frontmatter: {page: {eq: "/"}}}, sort: {order: ASC, fields: frontmatter___rank}) {
+      allMdx(
+        filter: { frontmatter: { page: { eq: "/" } } }
+        sort: { order: ASC, fields: frontmatter___rank }
+      ) {
         nodes {
           frontmatter {
             title
@@ -41,7 +44,8 @@ export default function Home() {
           }
         }
       }
-    }`)
+    }
+  `)
 
   const sections = data.allTopYaml.nodes[0].sections
   const cards = new Map()
@@ -65,9 +69,7 @@ export default function Home() {
 
       <ArticleScreen content gray>
         <div className={styles.author}>
-          <h2 id="intro">
-            著者近影など
-          </h2>
+          <h2 id="intro">著者近影など</h2>
           <div className={styles.authorImage}>
             <img src={AuthorImage} alt="著者近影" />
           </div>
@@ -104,11 +106,7 @@ export default function Home() {
               </a>
             </li>
             <li>
-              <Link
-                to="/weblog"
-              >
-                Blog
-              </Link>
+              <Link to="/weblog">Blog</Link>
             </li>
           </ul>
         </div>
@@ -116,36 +114,34 @@ export default function Home() {
 
       <div className={styles.waveBgWhite}></div>
 
-      {
-        sections.map(section => (
-          <div key={section.key}>
-            <ArticleScreen content>
-              <h2 id={section.key}>
-                {" "}
-                <Anchor anchorId={section.key} /> { section.name }
-              </h2>
-              {
-                cards.get(section.key).map(card => (
-                  <SectionBox key={card.frontmatter.title}>
-                    <WorksSection
-                      title={card.frontmatter.title}
-                      link={card.frontmatter.link}
-                      logo={card.frontmatter.logo ? card.frontmatter.logo.publicURL : null}
-                      technicalElements={card.frontmatter.wtag}
-                    >
-                      <MDXRenderer>
-                        { card.body }
-                      </MDXRenderer>
-                    </WorksSection>
-                  </SectionBox>
-                ))
-              }
-            </ArticleScreen>
+      {sections.map(section => (
+        <div key={section.key}>
+          <ArticleScreen content>
+            <h2 id={section.key}>
+              {" "}
+              <Anchor anchorId={section.key} /> {section.name}
+            </h2>
+            {cards.get(section.key).map(card => (
+              <SectionBox key={card.frontmatter.title}>
+                <WorksSection
+                  title={card.frontmatter.title}
+                  link={card.frontmatter.link}
+                  logo={
+                    card.frontmatter.logo
+                      ? card.frontmatter.logo.publicURL
+                      : null
+                  }
+                  technicalElements={card.frontmatter.wtag}
+                >
+                  <MDXRenderer>{card.body}</MDXRenderer>
+                </WorksSection>
+              </SectionBox>
+            ))}
+          </ArticleScreen>
 
-            <WaveHorizon />
-          </div>
-        ))
-      }
+          <WaveHorizon />
+        </div>
+      ))}
 
       <Footer />
     </div>

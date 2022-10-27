@@ -44,14 +44,19 @@ export default function Home() {
         </div>
         <img className={styles.windowImage} src={windowImage} alt="" />
 
-        <div className={styles.summary}>
-        </div>
+        <div className={styles.summary}></div>
 
         <nav className={styles.toppageFirestScreenNav}>
           <ul>
-            <li><Link to="/weblog">&#x1f4d9; ウェブログ</Link></li>
-            <li><a href="#intro">&#x1f464; 著者近影</a></li>
-            <li><a href="#works">&#x1f527; つくっているもの</a></li>
+            <li>
+              <Link to="/weblog">&#x1f4d9; ウェブログ</Link>
+            </li>
+            <li>
+              <a href="#intro">&#x1f464; 著者近影</a>
+            </li>
+            <li>
+              <a href="#works">&#x1f527; つくっているもの</a>
+            </li>
           </ul>
         </nav>
 

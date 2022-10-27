@@ -22,7 +22,7 @@ module.exports = {
         `,
         feeds: [
           {
-            serialize: ({ query: {site, allMdx} }) => {
+            serialize: ({ query: { site, allMdx } }) => {
               return allMdx.nodes.map(node => {
                 const url = `${site.siteMetadata.siteUrl}/weblog/${node.slug}`
 
@@ -49,24 +49,24 @@ module.exports = {
               }
             `,
             output: "/rss.xml",
-            title: "garakuta-toolbox weblog"
+            title: "garakuta-toolbox weblog",
           },
-        ]
+        ],
       },
     },
     {
       resolve: "gatsby-source-filesystem",
       options: {
-        name: 'blog',
-        path: `${__dirname}/assets/posts`
-      }
+        name: "blog",
+        path: `${__dirname}/assets/posts`,
+      },
     },
     {
       resolve: "gatsby-source-filesystem",
       options: {
-        name: 'cards',
-        path: `${__dirname}/assets/top`
-      }
+        name: "cards",
+        path: `${__dirname}/assets/top`,
+      },
     },
     {
       resolve: "gatsby-plugin-mdx",
@@ -76,22 +76,18 @@ module.exports = {
           "gatsby-remark-autolink-headers",
           "gatsby-remark-images",
           {
-            resolve: 'gatsby-remark-copy-linked-files',
+            resolve: "gatsby-remark-copy-linked-files",
             options: {
-              ignoreFileExtensions: ['bmp', 'png', 'jpg', 'jpeg'],
+              ignoreFileExtensions: ["bmp", "png", "jpg", "jpeg"],
             },
           },
         ],
-        remarkPlugins: [
-          require('remark-math'),
-        ],
-        rehypePlugins: [
-          [require('rehype-katex'), { strict: 'ignore' }],
-        ],
-      }
+        remarkPlugins: [require("remark-math")],
+        rehypePlugins: [[require("rehype-katex"), { strict: "ignore" }]],
+      },
     },
-    'gatsby-transformer-yaml',
-    'gatsby-plugin-sitemap'
+    "gatsby-transformer-yaml",
+    "gatsby-plugin-sitemap",
   ],
   siteMetadata: {
     title: "がらくたツールボックス",
@@ -100,7 +96,7 @@ module.exports = {
     siteUrl: "https://garakuta-toolbox.com",
     counterUrl: "",
     weblog: {
-      tagPath: '/weblog/tags/'
+      tagPath: "/weblog/tags/",
     },
     twitter: {
       card: "summary_large_image",

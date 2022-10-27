@@ -1,7 +1,13 @@
 import React from "react"
-import * as styles from './wave.module.css'
+import * as styles from "./wave.module.css"
 
-export default function Wave({width, amplitude, wavelength, color, colorBottom}) {
+export default function Wave({
+  width,
+  amplitude,
+  wavelength,
+  color,
+  colorBottom,
+}) {
   const id = Math.floor(Math.random() * 10000000)
   return (
     <svg
@@ -21,10 +27,7 @@ export default function Wave({width, amplitude, wavelength, color, colorBottom})
           height={amplitude}
           viewBox="0 0 100 50"
         >
-          <path
-            fill={color}
-            d="M 0 25 Q 25 -20, 50 25, 75 70, 100 25"
-          />
+          <path fill={color} d="M 0 25 Q 25 -20, 50 25, 75 70, 100 25" />
           <path
             fill={colorBottom}
             transform="scale(1 -1) translate(-50 -50)"
@@ -32,7 +35,7 @@ export default function Wave({width, amplitude, wavelength, color, colorBottom})
           />
         </pattern>
       </defs>
-      <rect fill={`url(#${id})`} x="0" y="0" width={width} height={amplitude}/>
+      <rect fill={`url(#${id})`} x="0" y="0" width={width} height={amplitude} />
     </svg>
   )
 }

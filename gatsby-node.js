@@ -15,7 +15,7 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
 
 exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions
-  
+
   const tags = await graphql(`
     query {
       allMdx {
@@ -29,14 +29,14 @@ exports.createPages = async ({ graphql, actions }) => {
       path: `/weblog/tags/${tagName}`,
       component: path.resolve(`./src/templates/tags.js`),
       context: {
-        tagName
+        tagName,
       },
     })
   })
 
   const posts = await graphql(`
     query {
-      allMdx(filter: {fileAbsolutePath: {regex: "/posts/"}}) {
+      allMdx(filter: { fileAbsolutePath: { regex: "/posts/" } }) {
         nodes {
           id
           slug
@@ -45,12 +45,12 @@ exports.createPages = async ({ graphql, actions }) => {
     }
   `)
 
-  posts.data.allMdx.nodes.forEach(({slug, id}) => {
+  posts.data.allMdx.nodes.forEach(({ slug, id }) => {
     createPage({
       path: `/weblog/${slug}`,
       component: path.resolve(`./src/templates/post.js`),
       context: {
-        id
+        id,
       },
     })
   })
