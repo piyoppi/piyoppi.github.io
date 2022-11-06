@@ -76,16 +76,18 @@ module.exports = {
           "gatsby-remark-autolink-headers",
           "gatsby-remark-images",
           {
+            resolve: `gatsby-remark-katex`,
+            options: {
+              strict: `ignore`
+            }
+          },
+          {
             resolve: "gatsby-remark-copy-linked-files",
             options: {
               ignoreFileExtensions: ["bmp", "png", "jpg", "jpeg"],
             },
           },
-        ],
-        mdxOptions: {
-          remarkPlugins: [require("remark-math")],
-          rehypePlugins: [[require("rehype-katex"), { strict: "ignore" }]],
-        }
+        ]
       },
     },
     "gatsby-transformer-yaml",
