@@ -15,7 +15,7 @@ import workingImage from "../../assets/images/working.png"
 import displayImage from "../../assets/images/working-display.png"
 import { Link } from "gatsby"
 
-export default function Home() {
+export default function ToppageFirstScreen() {
   return (
     <ArticleScreen fullScreen>
       <div className={styles.toppageBoundary}>

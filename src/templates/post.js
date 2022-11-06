@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react"
 import { graphql, Link } from "gatsby"
-import { MDXRenderer } from "gatsby-plugin-mdx"
 import { useLocation } from "@reach/router"
 import Layout from "../layouts/default"
 import * as styles from "./post.module.css"
@@ -9,7 +8,7 @@ import TagList from "../components/TagList"
 import HeadingNavLinksContainer from "../components/HeadingNavLinksContainer"
 import "katex/dist/katex.min.css"
 
-export default function BlogPost({ data }) {
+export default function BlogPost({ data, children }) {
   const description = data.mdx.excerpt
   const location = useLocation()
 
@@ -35,7 +34,7 @@ export default function BlogPost({ data }) {
           </div>
         </header>
 
-        <MDXRenderer>{data.mdx.body}</MDXRenderer>
+        {children}
 
         <div className={styles.counterSection}>
           <counter-container apiurl={data.site.siteMetadata.counterUrl}>
@@ -75,8 +74,7 @@ export const query = graphql`
         date(formatString: "MMMM D, YYYY")
         tags
       }
-      body
-      excerpt(pruneLength: 100, truncate: true)
+      excerpt(pruneLength: 100)
     }
     site {
       siteMetadata {

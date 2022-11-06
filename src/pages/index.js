@@ -9,7 +9,7 @@ import SEO from "./../components/seo"
 import WebFonts from "./../components/webFonts"
 import Footer from "./../components/footer"
 import { Link, useStaticQuery, graphql } from "gatsby"
-import { MDXRenderer } from "gatsby-plugin-mdx"
+import { MDXProvider } from "@mdx-js/react"
 import "./index.css"
 import * as styles from "./index.module.css"
 
@@ -133,7 +133,7 @@ export default function Home() {
                   }
                   technicalElements={card.frontmatter.wtag}
                 >
-                  <MDXRenderer>{card.body}</MDXRenderer>
+                  <MDXProvider>{card.body}</MDXProvider>
                 </WorksSection>
               </SectionBox>
             ))}

@@ -1,14 +1,15 @@
 const path = require(`path`)
 const { createFilePath } = require(`gatsby-source-filesystem`)
+const slugify = require(`@sindresorhus/slugify`)
 
 exports.onCreateNode = ({ node, actions, getNode }) => {
   const { createNodeField } = actions
-  if (node.internal.type === `MarkdownRemark`) {
+  if (node.internal.type === 'Mdx') {
     const value = createFilePath({ node, getNode })
     createNodeField({
       name: `slug`,
       node,
-      value,
+      value: value.substr(1),
     })
   }
 }
@@ -36,21 +37,26 @@ exports.createPages = async ({ graphql, actions }) => {
 
   const posts = await graphql(`
     query {
-      allMdx(filter: { fileAbsolutePath: { regex: "/posts/" } }) {
+      allMdx(filter: {internal: {contentFilePath: {regex: "/posts/"}}}) {
         nodes {
           id
-          slug
+          fields {
+            slug
+          },
+          internal {
+            contentFilePath
+          }
         }
       }
     }
   `)
 
-  posts.data.allMdx.nodes.forEach(({ slug, id }) => {
+  posts.data.allMdx.nodes.forEach(param => {
     createPage({
-      path: `/weblog/${slug}`,
-      component: path.resolve(`./src/templates/post.js`),
+      path: `/weblog/${param.fields.slug}`,
+      component: path.resolve(`./src/templates/post.js`) + `?__contentFilePath=${param.internal.contentFilePath}`,
       context: {
-        id,
+        id: param.id,
       },
     })
   })

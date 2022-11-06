@@ -36,7 +36,9 @@ export const query = graphql`
           date
           tags
         }
-        slug
+        fields {
+          slug
+        }
       }
     }
   }

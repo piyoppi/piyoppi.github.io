@@ -82,8 +82,10 @@ module.exports = {
             },
           },
         ],
-        remarkPlugins: [require("remark-math")],
-        rehypePlugins: [[require("rehype-katex"), { strict: "ignore" }]],
+        mdxOptions: {
+          remarkPlugins: [require("remark-math")],
+          rehypePlugins: [[require("rehype-katex"), { strict: "ignore" }]],
+        }
       },
     },
     "gatsby-transformer-yaml",

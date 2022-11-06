@@ -10,7 +10,7 @@ export default function Weblog() {
   const data = useStaticQuery(graphql`
     query {
       allMdx(
-        filter: { fileAbsolutePath: { regex: "/posts/" } }
+        filter: {internal: {contentFilePath: {regex: "/posts/"}}}
         sort: { fields: frontmatter___date, order: DESC }
       ) {
         nodes {
@@ -19,7 +19,9 @@ export default function Weblog() {
             date
             tags
           }
-          slug
+          fields {
+            slug
+          }
         }
       }
     }
