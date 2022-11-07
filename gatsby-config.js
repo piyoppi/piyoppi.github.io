@@ -2,9 +2,6 @@ module.exports = {
   plugins: [
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sharp",
-    "gatsby-remark-autolink-headers",
-    "gatsby-remark-images",
-    "gatsby-remark-prismjs",
     {
       resolve: `gatsby-plugin-feed`,
       options: {
@@ -72,7 +69,6 @@ module.exports = {
       resolve: "gatsby-plugin-mdx",
       options: {
         gatsbyRemarkPlugins: [
-          "gatsby-remark-prismjs",
           "gatsby-remark-autolink-headers",
           "gatsby-remark-images",
           {
@@ -91,6 +87,9 @@ module.exports = {
         mdxOptions: {
           remarkPlugins: [
             require('remark-gfm')
+          ],
+          rehypePlugins: [
+            require('@mapbox/rehype-prism')
           ]
         }
       },
