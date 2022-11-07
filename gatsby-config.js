@@ -87,7 +87,12 @@ module.exports = {
               ignoreFileExtensions: ["bmp", "png", "jpg", "jpeg"],
             },
           },
-        ]
+        ],
+        mdxOptions: {
+          remarkPlugins: [
+            require('remark-gfm')
+          ]
+        }
       },
     },
     "gatsby-transformer-yaml",
