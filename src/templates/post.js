@@ -40,7 +40,7 @@ export default function BlogPost({ data, children }) {
           <counter-container apiurl={data.site.siteMetadata.counterUrl}>
             <counter-increment-button>
               <span className={styles.likeButton}>
-                &#x1f31f;
+                🌟
                 <span className={styles.likeCount}>
                   <counter-display>
                     <span slot="loading">...</span>
