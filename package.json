@@ -36,7 +36,8 @@
     "gatsby-transformer-yaml": "^4.23.0",
     "katex": "^0.13.24",
     "prettier": "2.7.1",
-    "prismjs": "^1.29.0"
+    "prismjs": "^1.29.0",
+    "remark-frontmatter": "^4.0.1"
   },
   "repository": {
     "type": "git",

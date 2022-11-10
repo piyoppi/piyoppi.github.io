@@ -9,9 +9,11 @@ import SEO from "./../components/seo"
 import WebFonts from "./../components/webFonts"
 import Footer from "./../components/footer"
 import { Link, useStaticQuery, graphql } from "gatsby"
-import { MDXProvider } from "@mdx-js/react"
 import "./index.css"
 import * as styles from "./index.module.css"
+import { runSync } from '@mdx-js/mdx'
+import {Fragment, jsx, jsxs} from 'react/jsx-runtime'
+import {useMDXComponents} from '@mdx-js/react'
 
 import AuthorImage from "./../../assets/images/author.png"
 
@@ -33,7 +35,13 @@ export default function Home() {
             }
             rank
           }
+          internal {
+            contentFilePath
+          }
           body
+          fields {
+            compiled
+          }
         }
       }
       allTopYaml {
@@ -50,13 +58,13 @@ export default function Home() {
   const sections = data.allTopYaml.nodes[0].sections
   const cards = new Map()
 
-  data.allMdx.nodes.forEach(node => {
+  for(const node of data.allMdx.nodes) {
     if (!cards.has(node.frontmatter.sectionKey)) {
       cards.set(node.frontmatter.sectionKey, [])
     }
 
     cards.get(node.frontmatter.sectionKey).push(node)
-  })
+  }
 
   return (
     <div>
@@ -111,7 +119,6 @@ export default function Home() {
           </ul>
         </div>
       </ArticleScreen>
-
       <div className={styles.waveBgWhite}></div>
 
       {sections.map(section => (
@@ -133,7 +140,7 @@ export default function Home() {
                   }
                   technicalElements={card.frontmatter.wtag}
                 >
-                  <MDXProvider>{card.body}</MDXProvider>
+                  {runSync(card.fields.compiled, {Fragment, jsx, jsxs, useMDXComponents}).default()}
                 </WorksSection>
               </SectionBox>
             ))}

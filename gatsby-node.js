@@ -1,15 +1,36 @@
 const path = require(`path`)
+const fs = require(`fs`)
 const { createFilePath } = require(`gatsby-source-filesystem`)
-const slugify = require(`@sindresorhus/slugify`)
 
-exports.onCreateNode = ({ node, actions, getNode }) => {
+exports.onCreateNode = async ({ node, actions, getNode }) => {
   const { createNodeField } = actions
+
+  const { compile } = await import('@mdx-js/mdx')
+  const remarkFrontmatter = (await import('remark-frontmatter')).default
+
   if (node.internal.type === 'Mdx') {
+    const mdx = fs.readFileSync(node.internal.contentFilePath)
+    const compiled = await compile(
+      mdx,
+      {
+        outputFormat: 'function-body',
+        providerImportSource: '@mdx-js/react',
+        remarkPlugins: [remarkFrontmatter]
+      }
+    )
+
     const value = createFilePath({ node, getNode })
+
     createNodeField({
       name: `slug`,
       node,
       value: value.substr(1),
+    })
+
+    createNodeField({
+      name: `compiled`,
+      node,
+      value: compiled.value
     })
   }
 }
