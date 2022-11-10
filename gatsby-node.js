@@ -9,16 +9,6 @@ exports.onCreateNode = async ({ node, actions, getNode }) => {
   const remarkFrontmatter = (await import('remark-frontmatter')).default
 
   if (node.internal.type === 'Mdx') {
-    const mdx = fs.readFileSync(node.internal.contentFilePath)
-    const compiled = await compile(
-      mdx,
-      {
-        outputFormat: 'function-body',
-        providerImportSource: '@mdx-js/react',
-        remarkPlugins: [remarkFrontmatter]
-      }
-    )
-
     const value = createFilePath({ node, getNode })
 
     createNodeField({
@@ -27,11 +17,29 @@ exports.onCreateNode = async ({ node, actions, getNode }) => {
       value: value.substr(1),
     })
 
-    createNodeField({
-      name: `compiled`,
-      node,
-      value: compiled.value
-    })
+    if (node.internal.contentFilePath.includes('/top/cards/')) {
+      const mdx = fs.readFileSync(node.internal.contentFilePath)
+      const compiled = await compile(
+        mdx,
+        {
+          outputFormat: 'function-body',
+          providerImportSource: '@mdx-js/react',
+          remarkPlugins: [remarkFrontmatter]
+        }
+      )
+
+      createNodeField({
+        name: `compiled`,
+        node,
+        value: compiled.value
+      })
+    } else {
+      createNodeField({
+        name: `compiled`,
+        node,
+        value: ''
+      })
+    }
   }
 }
 
