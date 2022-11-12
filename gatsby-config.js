@@ -33,14 +33,16 @@ module.exports = {
             },
             query: `
               {
-                allMdx(filter: {fileAbsolutePath: {regex: "/posts/"}},sort: {order: DESC, fields: frontmatter___date}) {
+                allMdx(filter: {internal: {contentFilePath: {regex: "/posts/"}}}, sort: {order: DESC, fields: frontmatter___date}) {
                   nodes {
                     frontmatter {
                       title
                       date
                     }
-                    slug
-                    excerpt(pruneLength: 100, truncate: true)
+                    fields {
+                      slug
+                    }
+                    excerpt(pruneLength: 100)
                   }
                 }
               }
