@@ -24,7 +24,8 @@ exports.onCreateNode = async ({ node, actions, getNode }) => {
         {
           outputFormat: 'function-body',
           providerImportSource: '@mdx-js/react',
-          remarkPlugins: [remarkFrontmatter]
+          remarkPlugins: [remarkFrontmatter],
+          development: false
         }
       )
 
