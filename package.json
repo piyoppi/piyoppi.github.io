@@ -27,7 +27,7 @@
   "devDependencies": {
     "@mdx-js/react": "^2.1.5",
     "gatsby-plugin-mdx": "^5.0.0",
-    "gatsby-plugin-sharp": "^5.0.0",
+    "gatsby-plugin-sharp": "^5.9.0",
     "gatsby-plugin-sitemap": "^6.0.0",
     "gatsby-remark-autolink-headers": "^6.0.0",
     "gatsby-remark-images": "^7.0.0",
