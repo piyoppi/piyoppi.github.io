@@ -31,7 +31,7 @@
     "gatsby-plugin-sitemap": "^6.0.0",
     "gatsby-remark-autolink-headers": "^6.0.0",
     "gatsby-remark-images": "^7.0.0",
-    "gatsby-remark-katex": "^7.0.0",
+    "gatsby-remark-katex": "^7.9.0",
     "gatsby-source-filesystem": "^5.0.0",
     "gatsby-transformer-yaml": "^5.0.0",
     "katex": "^0.13.24",
