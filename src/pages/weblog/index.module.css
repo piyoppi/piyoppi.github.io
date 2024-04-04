@@ -9,9 +9,20 @@
   max-width: 200px;
 }
 
+.headerTitle {
+  word-break: keep-all;
+  overflow-wrap: break-word;
+}
+
 @media screen and (max-width: 600px) {
   .headerLogo {
     font-size: 10pt;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .headerLogo {
+    font-size: 9pt;
   }
 }
 

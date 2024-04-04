@@ -33,7 +33,7 @@ export default function Weblog() {
     <Layout title="ウェブログ">
       <header className={styles.headerLogo}>
         <img src={ToolboxImage} alt="" className={styles.headerLogoImage} />
-        <h1>がらくたツールボックスのウェブログ</h1>
+        <h1 className={styles.headerTitle}>がらくたツールボックスの<wbr />ウェブログ</h1>
       </header>
       <PostsList posts={posts} />
     </Layout>
